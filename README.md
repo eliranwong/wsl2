@@ -12,11 +12,44 @@ https://www.pengwin.dev/blog/2019/6/12/enable-wsl2-and-convert-existing-pengwin-
 > sudo apt update<br>
 > sudo apt dist-upgrade
 
-# Setup with pengwin-setup
-
 # Setup Common Tools
 
 > sudo apt install apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils binutils dbus-x11 opencc
+
+# Setup with pengwin-setup
+
+# Essential Changes
+
+* Edit /etc/profile.d/00-pengwin.sh
+
+<b>CHANGE</b> from:
+
+> export DISPLAY=:0
+
+to:
+
+> export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
+
+<b>CHANGE</b> from:
+
+> export LIBGL_ALWAYS_INDIRECT=1
+
+to:
+
+> unset LIBGL_ALWAYS_INDIRECT
+
+* Edit /etc/profile.d/dbus.sh
+
+<b>CHANGE</b> from:
+
+> eval "DBUS_SESSION_BUS_ADDRESS='tcp:host=localhost,port=42701,guid=6bb5626ef77b33289609c0a75de4614b';<br>
+> export DBUS_SESSION_BUS_ADDRESS;<br>
+> DBUS_SESSION_BUS_PID=1513;"<br>
+
+to:
+
+> export $(dbus-launch --exit-with-x11 | grep DBUS_SESSION_BUS_ADDRESS);
+> export $(dbus-launch --exit-with-x11 | grep DBUS_SESSION_BUS_PID);
 
 # Setup Input Method
 

@@ -1,0 +1,53 @@
+#!/bin/bash
+
+# This script helps running gui applications under WSL2 (Windows Subsystem for Linux Version 2)
+# Fixes on various issues of running gui apps under WSL2 are integrated in this script.
+
+# Connect to display server
+export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
+# For complex network, comment the line above and uncomment the following 9 lines to allow user entry of ip address.
+#echo Enter the ip address of your display server:
+#echo [Or enter nothing to use default setting]
+#read ipAddress
+#if [ -n "$ipAddress" ]
+#then
+#    export DISPLAY=$ipAddress:0.0
+#else
+#    export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
+#fi
+
+# Show DISPLAY variable
+echo DISPLAY=$DISPLAY
+
+# To work with Xresources, uncomment the following line.
+#xrdb -merge ~/.Xresources
+
+# To work better with mesa-utils
+export -n LIBGL_ALWAYS_INDIRECT
+
+# Set QStandardPaths
+mkdir -p /tmp/runtime-$USER
+export XDG_RUNTIME_DIR=/tmp/runtime-$USER
+
+# Input method [Optional]
+# We recommend using ibus as input method for non-latin languages in version 2 of WSL.
+# To use ibus, you have to install it first.
+# You may find instructions on installing ibus with the following link:
+# https://github.com/eliranwong/Chrome-OS-Linux/blob/master/others/windows_wsl.md#ibus
+# Uncomment the following 8 lines to lanuch ibus service & set variables:
+#dbus-launch ibus-daemon -x -d
+#export LC_CTYPE=zh_CN.UTF-8
+#export XIM=ibus
+#export XIM_PROGRAM=/usr/bin/ibus
+#export QT_IM_MODULE=ibus
+#export GTK_IM_MODULE=ibus
+#export XMODIFIERS=@im=ibus
+#export DefaultIMModule=ibus
+
+# Remarks:
+# With regards to input method, you may consider fcitx, but we found that fcitx is very broken under in version 2 of WSL.
+
+# Run a gui application
+echo GUI environment is now ready.
+echo Launching $1
+dbus-launch $1

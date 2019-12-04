@@ -57,6 +57,8 @@ GUI > FCITX [installed for testing, it is currently not working in WSL2]
 
 GUI > GUILIB
 
+GUI > SYNAPTIC
+
 PROGRAMMING > PYTHONPI
 
 SETTINGS > EXPLORER
@@ -144,6 +146,7 @@ wps office [https://www.wps.com/download] shows better compatibilities with ms f
 
 * mail client<br>
 mailspring is available for download at https://getmailspring.com/. Mailspring works with gmail signin whereas thunderbird doesn't.
+To verify gmail signin with mailspring, use Linux browser installed in WSL2 instead of using browser installed in Windows directory.
 
 # Setup mlocate
 
@@ -156,3 +159,10 @@ To create database:<br>
 To manually update the database:<br>
 > sudo updatedb
 
+To run:
+
+> locate
+
+or
+
+> mlocate

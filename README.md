@@ -21,7 +21,7 @@ To work with WSL2, select "Allow Public Access"
 
 Remarks: Set Windows firewall according to your needs.
 
-# VCXSRV (FREE)
+# Alternative to X410 - VCXSRV (FREE)
 
 You may consider VCXSRV as an alternative to X410.  In our testing, windowed apps work better in X410 due to its feature "DPI Scaling > High Qaulity".  You don't need to install VCXSRV if you have X410 installed.
 

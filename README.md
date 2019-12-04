@@ -18,9 +18,7 @@ https://www.pengwin.dev/blog/2019/6/12/enable-wsl2-and-convert-existing-pengwin-
 
 # Setup with pengwin-setup
 
-# Essential Changes
-
-* Edit /etc/profile.d/00-pengwin.sh
+# Edit /etc/profile.d/00-pengwin.sh
 
 <b>CHANGE</b> from:
 
@@ -38,7 +36,7 @@ to:
 
 > unset LIBGL_ALWAYS_INDIRECT
 
-* Edit /etc/profile.d/dbus.sh
+# Edit /etc/profile.d/dbus.sh
 
 <b>CHANGE</b> from:
 

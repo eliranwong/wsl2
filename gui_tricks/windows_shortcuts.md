@@ -24,7 +24,7 @@ Right-click the Windows shortcut file "Terminal (WSL)" and select "properties".
 
 Change Target to:
 
-> pengwin run "cd~; ~/bin/startmenu 'gnome-terminal --working-directory=~'"
+> pengwin run "cd~; ~/bin/startmenu 'gnome-terminal --working-directory=\~'"
 
 Change Run to:
 

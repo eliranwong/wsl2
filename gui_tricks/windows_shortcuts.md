@@ -1,6 +1,8 @@
 # # Windows startmenu shortcuts
 
-At the time of writing, Windows startmenu shortcuts generated with pengwin-setup are not working.  Below are the fixes.
+At the time of writing, Windows startmenu shortcuts generated with pengwin-setup are not working.
+
+Below are the fixes.
 
 # Create shortcuts with pengwin-setup
 
@@ -21,6 +23,8 @@ Select "GUI > STARTMENU"
 Download the following file and put in ~/bin
 
 https://github.com/eliranwong/wsl2/blob/master/bin/startmenu
+
+[You may edit the file above to enable ibus as default input method.]
 
 and run:
 

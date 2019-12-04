@@ -144,3 +144,15 @@ wps office [https://www.wps.com/download] shows better compatibilities with ms f
 
 * mail client<br>
 mailspring is available for download at https://getmailspring.com/. Mailspring works with gmail signin whereas thunderbird doesn't.
+
+# Setup mlocate
+
+To install:<br>
+> sudo apt install mlocate
+
+To create database:<br>
+> sudo /etc/cron.daily/mlocate
+
+To manually update the database:<br>
+> sudo updatedb
+

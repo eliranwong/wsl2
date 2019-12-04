@@ -87,9 +87,7 @@ to:
 
 to:
 
-> #eval "DBUS_SESSION_BUS_ADDRESS='tcp:host=localhost,port=42701,guid=6bb5626ef77b33289609c0a75de4614b';<br>
-> #export DBUS_SESSION_BUS_ADDRESS;<br>
-> #DBUS_SESSION_BUS_PID=1513;"<br>
+> export $(dbus-launch --exit-with-x11)
 
 # Setup Input Method
 

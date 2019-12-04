@@ -53,6 +53,10 @@ Add alias:
 
 # Change default font
 
+Some characters may not be displayed correctly or nicely with your Linux default font.
+
+You can change the default font for displaying text in UniqueBible.app.
+
 Change the 2nd line of ~/UniqueBible/htmlResources/theText.css, from
 
 > /* font-family: 'Calibri'; */

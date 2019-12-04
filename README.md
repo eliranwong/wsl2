@@ -123,3 +123,12 @@ https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md
 
 # Setup Other GUI Apps
 
+sudo apt install geany geany-plugins rxvt-unicode gnome-terminal thunar sqlitebrowser falkon gthumb gedit gnome-keyring
+
+[Remarks: gnome-keyring is required for running mailspring.]
+
+* Office<br>
+wps office [https://www.wps.com/download] shows better compatibilities with ms files than libreoffice.
+
+* mail client<br>
+mailspring is available for download at https://getmailspring.com/. Mailspring works with gmail signin whereas thunderbird doesn't.

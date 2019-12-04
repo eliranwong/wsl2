@@ -34,7 +34,7 @@ Read examples below to change shortcut's "Target" to:
 
 > pengwin run "cd~; ~/bin/startmenu '[put your command here]'"
 
-# Take "gnome-terminal" for an example
+# Take "gnome-terminal" as an example
 
 On start menu, right-click "Terminal (WSL)" under Pengwin Applications.
 
@@ -54,7 +54,7 @@ Apply the changes.
 
 Double-click the Windows shortcut file "Terminal (WSL)" to launch gnome-terminal with fixed gui environment.
 
-# Take "gedit" for an example
+# Take "gedit" as an example
 
 On start menu, right-click "Text Editor (WSL)" under Pengwin Applications.
 

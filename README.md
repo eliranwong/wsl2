@@ -62,6 +62,10 @@ We recommend "rxvt-unicode" and "gnome-terminal".
 
 We recommend "ibus" instead.
 
-# Setup GUI Apps
-
 # Setup Bible Apps
+
+# Setup Other GUI Apps
+
+# Fixing Windows Startmenu Shortcuts
+
+# Tricks for Launching GUI Apps via Terminal

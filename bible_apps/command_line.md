@@ -4,6 +4,8 @@ Repository at: https://github.com/eliranwong/bible
 
 # Install dart SDK
 
+It looks like dart SDK works in WSL2 but not in WSL1.  In WSL1, running "pub get" command receives errors "connection closed while receiving data".  "pub get" runs smoothly in WSL2.
+
 https://github.com/eliranwong/Chrome-OS-Linux/blob/master/development-tools/dart_sdk.md
 
 # Install "bible" project in Linux

@@ -23,11 +23,11 @@ Remarks: Set Windows firewall according to your needs.
 
 # Alternative to X410 - VCXSRV (FREE)
 
-You may consider VCXSRV as an alternative to X410.  In our testing, windowed apps work better in X410 due to its feature "DPI Scaling > High Qaulity".  You don't need to install VCXSRV if you have X410 installed.
+You may consider VCXSRV as an alternative to X410.
 
-It is not recommended to install VCXSRV via pengwin-setup.
+We do not recommended installing VCXSRV via pengwin-setup.
 
-Instead, we recommend to install VCXSRV via Windows PowerShell (Admin):
+Instead, we recommend installing VCXSRV via Windows PowerShell (Admin):
 [Reason: It is easier to use XLaunch from start menu for configuration.]
 
 > choco install vcxsrv
@@ -35,6 +35,10 @@ Instead, we recommend to install VCXSRV via Windows PowerShell (Admin):
 To make "vcxsrv" to work with google web engine or QtWebEngine, select from XLaunch "Native OpenGL".
 
 To make "vcxsrv" to work with WSL2, select from XLaunch "Disable Access Control".
+
+<b>Comment:</b>
+
+In our testing, windowed apps work better and look nicer in X410, as it offers a feature "DPI Scaling > High Qaulity".  You don't need to install VCXSRV if you have X410 installed.
 
 # Update Installed Packages
 
@@ -103,9 +107,13 @@ https://github.com/eliranwong/wsl2/blob/master/input_method/ibus.md
 
 pengwin terminal is not good for displaying different languages at the same time.  For example, pengwin terminal window failed to compare English, Chinese, Hebrew & Greek bible verses at the same time.
 
-We recommend "rxvt-unicode" and "gnome-terminal", read this link for setup:
+We recommend "rxvt-unicode" and "gnome-terminal" as alternatives, read this link for setup:
 
 https://github.com/eliranwong/wsl2/tree/master/terminal
+
+<b>Comment:</b>
+
+"gnome-terminal" is easier to be configured.  Copy & Paste in "gnome-terminal" can be done through right-click context menu or keyboard shortcuts.
 
 # Tricks for Launching GUI Apps
 

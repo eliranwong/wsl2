@@ -101,7 +101,9 @@ https://github.com/eliranwong/wsl2/blob/master/ibus.md
 
 pengwin terminal is not good for displaying different languages at the same time.  For example, pengwin terminal window failed to compare English, Chinese, Hebrew & Greek bible verses at the same time.
 
-We recommend "rxvt-unicode" and "gnome-terminal".
+We recommend "rxvt-unicode" and "gnome-terminal", read this link for setup:
+
+https://github.com/eliranwong/wsl2/tree/master/terminal
 
 # Tricks for Launching GUI Apps
 

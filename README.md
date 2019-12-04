@@ -54,13 +54,15 @@ to:
 
 "fcitx", bundled with pengwin, is not working in WSL2 at the time of writing.
 
+We recommend "ibus" instead.  For setup of ibus, read:
+
+https://github.com/eliranwong/wsl2/blob/master/ibus.md
+
 # Setup Terminal Apps
 
 pengwin terminal is not good for displaying different languages at the same time.  For example, pengwin terminal window failed to compare English, Chinese, Hebrew & Greek bible verses at the same time.
 
 We recommend "rxvt-unicode" and "gnome-terminal".
-
-We recommend "ibus" instead.
 
 # Tricks for Launching GUI Apps
 

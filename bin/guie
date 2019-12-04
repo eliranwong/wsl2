@@ -46,4 +46,7 @@ export XDG_RUNTIME_DIR=/tmp/runtime-$USER
 
 # Remarks: You may consider fcitx, but we found that fcitx is very broken under in version 2 of WSL.
 
+# To correct DBUS_SESSION
+export $(dbus-launch --exit-with-x11)
+
 echo GUI environment is now ready.

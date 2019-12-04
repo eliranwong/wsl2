@@ -1,3 +1,7 @@
+# Desktop version repository
+
+https://github.com/eliranwong/UniqueBible
+
 # Installation in WSL2 (Windows Subsystem for Linux Version 2)
 
 In our testing, UniqueBible requires version 2 of WSL to work.  It does not run with version 1 of WSL.

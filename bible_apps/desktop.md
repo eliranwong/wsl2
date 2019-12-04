@@ -51,6 +51,18 @@ Add alias:
 
 > uba
 
+# Change default font
+
+Change the 2nd line of ~/UniqueBible/htmlResources/theText.css, from
+
+> /* font-family: 'Calibri'; */
+
+to:
+
+> font-family: 'Calibri';
+
+If you prefer a font other than 'Calibri', simply replace it with your favourite font.
+
 # Shared marvelData folder in Windows Drive C [optional]
 
 You can install a copy in Windows drive C and a copy in WSL2.

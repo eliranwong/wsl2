@@ -48,7 +48,7 @@ to:
 
 to:
 
-> export $(dbus-launch --exit-with-x11 | grep DBUS_SESSION_BUS_ADDRESS);
+> export $(dbus-launch --exit-with-x11 | grep DBUS_SESSION_BUS_ADDRESS);<br>
 > export $(dbus-launch --exit-with-x11 | grep DBUS_SESSION_BUS_PID);
 
 # Setup Input Method

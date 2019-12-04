@@ -113,5 +113,13 @@ Read https://github.com/eliranwong/wsl2/blob/master/gui_tricks/windows_shortcuts
 
 # Setup Bible Apps
 
+Command line version of UniqueBible.app:
+
+https://github.com/eliranwong/wsl2/blob/master/bible_apps/command_line.md
+
+Desktop version of UniqueBible.app:
+
+https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md
+
 # Setup Other GUI Apps
 

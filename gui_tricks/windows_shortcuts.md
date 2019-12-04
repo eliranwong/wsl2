@@ -52,7 +52,7 @@ with:
 
 > ~/bin/startmenu
 
-[If you are not sure what to search for and replace, option 2 below is easier for most users.]
+[If you are not sure what to search for and replace, option 2 below may be easier.]
 
 <b>OPTION 2 - replace the whole line of shortcut target:</b>
 

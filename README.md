@@ -46,8 +46,9 @@ to:
 
 to:
 
-> export $(dbus-launch --exit-with-x11 | grep DBUS_SESSION_BUS_ADDRESS);<br>
-> export $(dbus-launch --exit-with-x11 | grep DBUS_SESSION_BUS_PID);
+> #eval "DBUS_SESSION_BUS_ADDRESS='tcp:host=localhost,port=42701,guid=6bb5626ef77b33289609c0a75de4614b';<br>
+> #export DBUS_SESSION_BUS_ADDRESS;<br>
+> #DBUS_SESSION_BUS_PID=1513;"<br>
 
 # Setup Input Method
 

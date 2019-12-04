@@ -66,9 +66,3 @@ alias bible="$HOME/bible/bin/bible"
 
 If you do not need dart SDK anymore, you can remove it to free around 500MB of disk space:<br>
 sudo apt remove dart
-
-# Tips - Search Chinese bible(s)
-
-Use "fcitx" & "mlterm"
-
-Read https://github.com/eliranwong/Chrome-OS-Linux/blob/master/non-english/chinese.md#use-fcitx-to-type-chinese-on-terminal

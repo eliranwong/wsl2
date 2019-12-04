@@ -93,7 +93,7 @@ https://github.com/eliranwong/wsl2/blob/master/gui_tricks/terminal.md
 
 We recommend "ibus" instead.  For setup of ibus, read:
 
-https://github.com/eliranwong/wsl2/blob/master/ibus.md
+https://github.com/eliranwong/wsl2/blob/master/input_method/ibus.md
 
 # Setup Terminal Apps
 

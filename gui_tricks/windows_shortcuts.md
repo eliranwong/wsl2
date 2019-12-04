@@ -2,9 +2,7 @@
 
 At the time of writing, Windows startmenu shortcuts generated with pengwin-setup are not working.  Below are the fixes.
 
-# Take Windows shortcut for "gnome-terminal" as an example
-
-[Though we use "gnome-terminal" shortcut as an example, it applies to other shortcuts.]
+# Fixing shortcuts files
 
 Download the following file and put in ~/bin
 
@@ -14,7 +12,11 @@ and run:
 
 > chmod +x ~/bin/startmenu
 
+Read examples below to change shortcut's "Target" to:
 
+> pengwin run "cd~; ~/bin/startmenu '[put your command here]'"
+
+# Take shortcut for "gnome-terminal" for an example
 
 On start menu, right-click Terminal (WSL) under Pengwin Applications.
 

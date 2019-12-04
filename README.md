@@ -18,6 +18,25 @@ https://www.pengwin.dev/blog/2019/6/12/enable-wsl2-and-convert-existing-pengwin-
 
 # Setup with pengwin-setup
 
+<b>RECOMMENDED:</b>
+
+GUI > FCITX [installed for testing, it is currently not working in WSL2]
+
+GUI > GUILIB
+
+PROGRAMMING > PYTHONPI
+
+SETTINGS > EXPLORER
+
+SETTINGS > COLORTOOL
+
+<b>NOT RECOMMENDED:</b>
+
+"GUI > HIDPI"
+
+"GUI > VCXSRV"
+
+
 # Edit /etc/profile.d/00-pengwin.sh
 
 <b>CHANGE</b> from:

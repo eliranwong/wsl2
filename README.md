@@ -77,17 +77,15 @@ to:
 
 > unset LIBGL_ALWAYS_INDIRECT
 
-# Edit /etc/profile.d/dbus.sh
+# Remove /etc/profile.d/dbus.sh
 
-<b>CHANGE</b> from:
+This file currently breaks some GUI apps.
 
-> eval "DBUS_SESSION_BUS_ADDRESS='tcp:host=localhost,port=42701,guid=6bb5626ef77b33289609c0a75de4614b';<br>
-> export DBUS_SESSION_BUS_ADDRESS;<br>
-> DBUS_SESSION_BUS_PID=1513;"<br>
+> sudo rm /etc/profile.d/dbus.sh
 
-to:
+We fix the dbus_session issues with our tricks at:
 
-> export $(dbus-launch --exit-with-x11)
+https://github.com/eliranwong/wsl2/blob/master/gui_tricks/terminal.md
 
 # Setup Input Method
 
@@ -107,7 +105,11 @@ https://github.com/eliranwong/wsl2/tree/master/terminal
 
 # Tricks for Launching GUI Apps
 
+Read https://github.com/eliranwong/wsl2/blob/master/gui_tricks/terminal.md
+
 # Fixing Windows Startmenu Shortcuts
+
+Read https://github.com/eliranwong/wsl2/blob/master/gui_tricks/windows_shortcuts.md
 
 # Setup Bible Apps
 

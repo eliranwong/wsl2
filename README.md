@@ -7,7 +7,7 @@ Notes in this repository mainly describe the setup of pengwin & x410 in WSL2
 
 https://www.pengwin.dev/blog/2019/6/12/enable-wsl2-and-convert-existing-pengwin-installations
 
-# Setup X410
+# Setup X410 (PAID)
 
 DPI Scaling > High Quality (Windowed Apps Only)
 
@@ -20,6 +20,21 @@ Miscellaneous Options > Capture Windows Key
 To work with WSL2, select "Allow Public Access"
 
 Remarks: Set Windows firewall according to your needs.
+
+# VCXSRV (FREE)
+
+You may consider VCXSRV as an alternative to X410.  In our testing, windowed apps work better in X410 due to its feature "DPI Scaling > High Qaulity".  You don't need to install VCXSRV if you have X410 installed.
+
+It is not recommended to install VCXSRV via pengwin-setup.
+
+Instead, we recommend to install VCXSRV via Windows PowerShell (Admin):
+[Reason: It is easier to use XLaunch from start menu for configuration.]
+
+> choco install vcxsrv
+
+To make "vcxsrv" to work with google web engine or QtWebEngine, select from XLaunch "Native OpenGL".
+
+To make "vcxsrv" to work with WSL2, select from XLaunch "Disable Access Control".
 
 # Update Installed Packages
 
@@ -48,17 +63,6 @@ SETTINGS > COLORTOOL
 
 "GUI > HIDPI"
 
-"GUI > VCXSRV"
-
-It is not recommended to installed VCXSRV via pengwin-setup.
-
-Instead, we recommend to install it via Windows PowerShell (Admin):
-[Reason: It is easier to find XLaunch from start menu for configuration.]
-
-> choco install vcxsrv
-
-To make "vcxsrv" work with WSL2, select "Disable Access Control".
-
 # Edit /etc/profile.d/00-pengwin.sh
 
 <b>CHANGE</b> from:
@@ -79,7 +83,7 @@ to:
 
 # Remove /etc/profile.d/dbus.sh
 
-This file currently breaks some GUI apps.
+This file currently breaks input method and some other GUI apps.
 
 > sudo rm /etc/profile.d/dbus.sh
 

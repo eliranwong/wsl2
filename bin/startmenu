@@ -49,5 +49,5 @@ export XDG_RUNTIME_DIR=/tmp/runtime-$USER
 
 # Run a gui application
 echo GUI environment is now ready.
-echo Launching $1
+echo Launching $1 ...
 dbus-launch "$@"

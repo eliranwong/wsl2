@@ -1,5 +1,7 @@
 # Launch GUI apps via terminal
 
+At the time of writing, running GUI apps via pengwin terminal in WSL2 is very broken.  Below are fixes.
+
 # OPTION 1
 
 save the following file in ~/bin
@@ -30,3 +32,4 @@ Alternatively, launch gnome-terminal via Windows startup shortcut
 
 If you use our trick to launch "gnome-terminal" via Windows startmenu shortcut, you can skip the steps above and directly launch gui apps via gnome-terminal.
 
+Read https://github.com/eliranwong/wsl2/blob/master/gui_tricks/windows_shortcuts.md#take-gnome-terminal-as-an-example

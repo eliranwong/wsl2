@@ -72,4 +72,4 @@ Change <b>Run</b> to:
 
 Apply the changes.
 
-Double-click the Windows shortcut file "Text Editor (WSL)" to launch gnome-terminal with fixed gui environment.
+Double-click the Windows shortcut file "Text Editor (WSL)" to launch gedit.

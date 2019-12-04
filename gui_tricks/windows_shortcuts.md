@@ -1,4 +1,4 @@
-# # Windows startmenu shortcuts
+# Windows startmenu shortcuts
 
 At the time of writing, Windows startmenu shortcuts generated with pengwin-setup are not working.
 

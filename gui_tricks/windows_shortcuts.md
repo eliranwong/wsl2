@@ -30,9 +30,43 @@ and run:
 
 > chmod +x ~/bin/startmenu
 
-Read examples below to change shortcut's "Target" to:
+# Modify WSL Shortcuts Files
+
+On start menu, right-click a WSL shortcut file under Pengwin Applications.
+
+Select more > "Open file location"
+
+<b>OPTION 1 - search & replace of shrotcut target:</b>
+
+1) Right-click a WSL shortcut file, generated with pengwin-setup.
+
+2) Select "Properties"
+
+3) Inside the line of "Traget",
+
+search for and replace:
+
+> export DISPLAY=:0;
+
+with:
+
+> ~/bin/startmenu
+
+[If you are not sure what to search for and replace, option 2 below is easier for most users.]
+
+<b>OPTION 2 - replace the whole line of shortcut target:</b>
+
+1) Right-click a WSL shortcut file, generated with pengwin-setup.
+
+2) Select "Properties"
+
+3) Replace the whole line of "Target" field:
 
 > pengwin run "cd~; ~/bin/startmenu [put your command here]"
+
+4) Change "Run" option to "Minimized"
+
+We will use option 2 in the following examples.
 
 # Take "gnome-terminal" as an example
 

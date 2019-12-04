@@ -42,7 +42,7 @@ Select more > "Open file location"
 
 2) Select "Properties"
 
-3) Inside the line of "Traget",
+3) Inside the long line of "Traget" field,
 
 search for and replace:
 

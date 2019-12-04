@@ -7,6 +7,20 @@ Notes in this repository mainly describe the setup of pengwin & x410 in WSL2
 
 https://www.pengwin.dev/blog/2019/6/12/enable-wsl2-and-convert-existing-pengwin-installations
 
+# Setup X410
+
+DPI Scaling > High Quality (Windowed Apps Only)
+
+Shared Clipboard > Enable
+
+Shared Clipboard > Auto copy to Windows after selection
+
+Miscellaneous Options > Capture Windows Key
+
+To work with WSL2, select "Allow Public Access"
+
+Remarks: Set Windows firewall according to your needs.
+
 # Update Installed Packages
 
 > sudo apt update<br>
@@ -36,6 +50,14 @@ SETTINGS > COLORTOOL
 
 "GUI > VCXSRV"
 
+It is not recommended to installed VCXSRV via pengwin-setup.
+
+Instead, we recommend to install it via Windows PowerShell (Admin):
+[Reason: It is easier to find XLaunch from start menu for configuration.]
+
+> choco install vcxsrv
+
+To make "vcxsrv" work with WSL2, select "Disable Access Control".
 
 # Edit /etc/profile.d/00-pengwin.sh
 

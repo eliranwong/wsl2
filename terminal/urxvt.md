@@ -10,9 +10,9 @@
 # To customise
 
 1) Open ~/.Xresources:<br>
-nano ~/.Xresources
+> nano ~/.Xresources
 
-2) Edit ~/.Xresources, add the following lines to the file:<br>
+2) add the following lines to the file:<br>
 URxvt.background: #000000<br>
 URxvt.foreground: #FFFFFF<br>
 URxvt.color4: #1E90FF<br>
@@ -22,7 +22,7 @@ URxvt.perl-ext-common: selection-to-clipboard<br>
 URxvt.letterSpace: 0
 
 3) Run in terminal:<br>
-xrdb -merge ~/.Xresources
+> xrdb -merge ~/.Xresources
 
 # Copy & Paste
 

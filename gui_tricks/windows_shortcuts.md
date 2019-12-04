@@ -32,7 +32,7 @@ and run:
 
 Read examples below to change shortcut's "Target" to:
 
-> pengwin run "cd~; ~/bin/startmenu '[put your command here]'"
+> pengwin run "cd~; ~/bin/startmenu [put your command here]"
 
 # Take "gnome-terminal" as an example
 
@@ -44,7 +44,7 @@ Right-click the Windows shortcut file "Terminal (WSL)" and select "Properties".
 
 Change Target to:
 
-> pengwin run "cd~; ~/bin/startmenu 'gnome-terminal --working-directory=\~'"
+> pengwin run "cd~; ~/bin/startmenu gnome-terminal --working-directory=\~"
 
 Change Run to:
 
@@ -64,7 +64,7 @@ Right-click the Windows shortcut file "Text Editor (WSL)" and select "Properties
 
 Change <b>Target</b> to:
 
-> pengwin run "cd~; ~/bin/startmenu 'gedit'"
+> pengwin run "cd~; ~/bin/startmenu gedit"
 
 Change <b>Run</b> to:
 

@@ -1,6 +1,6 @@
 # Windows startmenu shortcuts
 
-At the time of writing, Windows startmenu shortcuts generated with pengwin-setup are not working.
+At the time of writing, Windows startmenu shortcuts generated with pengwin-setup are not working for WSL2.
 
 Below are the fixes.
 

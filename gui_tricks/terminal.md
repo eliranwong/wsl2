@@ -28,9 +28,9 @@ restart the terminal to make changes effective.
 
 # OPTION 3 - use "gnome-terminal"
 
-Alternatively, launch gnome-terminal via Windows startmenu shortcut
+Alternatively, launch gnome-terminal via Windows startmenu shortcut.
 
-If you use our trick to launch "gnome-terminal" via Windows startmenu shortcut, you can skip the steps above and directly launch gui apps via gnome-terminal.
+If you use our script to launch "gnome-terminal" via Windows startmenu shortcut, you can skip the option 1 above and directly launch any GUI apps via gnome-terminal.
 
 Read https://github.com/eliranwong/wsl2/blob/master/gui_tricks/windows_shortcuts.md#take-gnome-terminal-as-an-example
 

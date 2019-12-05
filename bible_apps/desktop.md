@@ -51,6 +51,38 @@ Add alias:
 
 > uba
 
+# Create a Windows shortcut file [recommended]
+
+After creating a Windows shortcut file, you can launch the app by:<br>
+- double-clicking a shortcut file<br>
+- using keyboard shortcuts
+
+<b>To create a Windows shortcut file for UniqueBible.app, for example:</b>
+
+1) Right-click an empty area on desktop
+
+2) New > Shortcut
+
+3) Type the location of the item, for example. 
+
+> pengwin run "cd ~/UniqueBible; source venv/bin/activate; ~/bin/startmenu python3 main.py"
+
+4) Name your shortcut, e.g. "UniqueBible.app (WSL)", and select "Finish"
+
+5) Right-click the created shortcut file, select "Properties"
+
+6) Empty the string in "Start in"
+
+7) In the field of "Shortcut key:", pressing "Ctrl + Alt + B" at the same time
+
+8) Run "Minimized"
+
+9) Download this icon https://github.com/eliranwong/UniqueBible/blob/master/htmlResources/theText.ico
+
+10) Change icon
+
+<img src="shortcut_properties.png" />
+
 # Change default font
 
 Some characters may not be displayed correctly or nicely with your Linux default font.

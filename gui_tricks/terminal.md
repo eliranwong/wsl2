@@ -22,7 +22,7 @@ https://github.com/eliranwong/wsl2/blob/master/bin/guie
 
 > chmod +x ~/bin/guie
 
-> echo "source $HOME/bin/guie" >> ~/.bashrc
+> echo "source $HOME/bin/guie" >> ~/.profile
 
 restart the terminal to make changes effective.
 
@@ -38,3 +38,7 @@ Read https://github.com/eliranwong/wsl2/blob/master/gui_tricks/windows_shortcuts
 # Remarks
 
 If you use option 3, you have to implement option 2 as well.  It looks like a duplication, but it fixes the dbus_session issues and input method for all GUI apps launched from the gnome-terminal opened with a Windows startmenu shortcut.
+
+Don't forget to select the following option for "gnome-terminal" for option 2 to work:
+
+Edit > Preferences > Profiles > Command > Run command as a login shell

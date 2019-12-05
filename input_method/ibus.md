@@ -47,7 +47,7 @@ export XMODIFIERS=@im=ibus<br>
 export DefaultIMModule=ibus<br>
 dbus-launch ibus-daemon -drx<br>
 
-It is <b>NOT recommended</b> to automate the service in this way, because "dbus-launch ibus-daemon -drx" work for some apps only.
+It is <b>NOT recommended</b> to automate the service the way above, because "dbus-launch ibus-daemon -drx" work for some apps only.
 
 To make input method to work with all GUI apps, take a look at our tricks on running GUI apps.
 

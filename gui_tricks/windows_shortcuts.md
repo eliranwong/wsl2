@@ -136,3 +136,21 @@ Apply the changes.
 Double-click the Windows shortcut file "Terminal (WSL)" to launch gnome-terminal with fixed gui environment.
 
 Please <b><a href="https://github.com/eliranwong/wsl2/blob/master/gui_tricks/terminal.md#remarks">the remarks HERE</a></b> for launching gnome-terminal via a Windows shortcut file.
+
+# Create a Windows shortcut without pengwin-setup
+
+1) Right-click an empty area within a folder in file explorer or desktop
+
+2) New > Shortcut
+
+3) Type the location of the item, for example. 
+
+> pengwin.exe run "cd~; ~/bin/startmenu firefox"
+
+4) Give a name
+
+5) Right-click, select "Properties"
+
+6) Remove the string in "Run in"
+
+7) Run "Minimised"

@@ -160,3 +160,7 @@ Please <b><a href="https://github.com/eliranwong/wsl2/blob/master/gui_tricks/ter
 9) "Apply" the changes and double the file if your app is launched.
 
 10) If it is not lanuched, changed "startmenu" to "startmenu2" in step 3.
+
+For an example on creating a shortcut to run a python application, with keyboard shortcuts and customised icon:
+
+https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#create-a-windows-shortcut-file-recommended

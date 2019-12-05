@@ -137,16 +137,18 @@ https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md
 
 # Setup Other GUI Apps
 
-sudo apt install geany geany-plugins rxvt-unicode gnome-terminal thunar sqlitebrowser falkon gthumb gedit gnome-keyring
+sudo apt install geany geany-plugins rxvt-unicode gnome-terminal thunar sqlitebrowser firefox-esr falkon gthumb gedit gnome-keyring libsecret*
 
-[Remarks: gnome-keyring is required for running mailspring.]
+[Remarks: ibus works with all GUI apps tested in both WSL1 & WSL2 whereas fcitx works only in some applications in WSL1.  At the time of writing, fcitx is broken in WSL2.]<br>
+[Remarks: Some of GUI apps above, e.g. falkon, work only in version 2 of WSL.]<br>
+[Remarks: gnome-keyring & libsecret* are required for running mailspring.]
 
 * Office<br>
 wps office [https://www.wps.com/download] shows better compatibilities with ms files than libreoffice.
 
 * mail client<br>
 mailspring is available for download at https://getmailspring.com/. Mailspring works with gmail signin whereas thunderbird doesn't.
-To verify gmail signin with mailspring, use Linux browser installed in WSL2 instead of using browser installed in Windows directory.
+To verify gmail signin with mailspring, use Linux browser installed in WSL2 instead of using browser installed in Windows directory.  To work with signin of multiple gmail accounts use, chrome / firefox / opera instead of falkon.
 
 # Setup mlocate
 
@@ -166,3 +168,8 @@ To run:
 or
 
 > mlocate
+
+# Workaround to work with USB drive in WSL2
+
+https://github.com/eliranwong/wsl2/blob/master/accessories/usb_drive.md
+

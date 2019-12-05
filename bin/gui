@@ -34,10 +34,11 @@ export XDG_RUNTIME_DIR=/tmp/runtime-$USER
 
 # Input method [Optional]
 # We recommend using ibus as input method for non-latin languages in version 2 of WSL.
+# You may consider to use fcitx instead of ibus, but fcitx does not work in many applications.
 # To use ibus, you have to install it first.
 # You may find instructions on installing ibus with the following link:
 # https://github.com/eliranwong/Chrome-OS-Linux/blob/master/others/windows_wsl.md#ibus
-# Uncomment the following 8 lines to lanuch ibus service & set variables:
+# Uncomment the following 8 lines to launch ibus service & set variables:
 #export LC_CTYPE=zh_CN.UTF-8
 #export XIM=ibus
 #export XIM_PROGRAM=/usr/bin/ibus

@@ -25,6 +25,9 @@ echo DISPLAY=$DISPLAY
 # To work better with mesa-utils
 export -n LIBGL_ALWAYS_INDIRECT
 
+# To correct DBUS_SESSION
+export $(dbus-launch --exit-with-x11)
+
 # Set QStandardPaths
 mkdir -p /tmp/runtime-$USER
 export XDG_RUNTIME_DIR=/tmp/runtime-$USER
@@ -35,7 +38,6 @@ export XDG_RUNTIME_DIR=/tmp/runtime-$USER
 # You may find instructions on installing ibus with the following link:
 # https://github.com/eliranwong/Chrome-OS-Linux/blob/master/others/windows_wsl.md#ibus
 # Uncomment the following 8 lines to lanuch ibus service & set variables:
-#dbus-launch ibus-daemon -x -d
 #export LC_CTYPE=zh_CN.UTF-8
 #export XIM=ibus
 #export XIM_PROGRAM=/usr/bin/ibus
@@ -43,9 +45,7 @@ export XDG_RUNTIME_DIR=/tmp/runtime-$USER
 #export GTK_IM_MODULE=ibus
 #export XMODIFIERS=@im=ibus
 #export DefaultIMModule=ibus
-
-# Remarks:
-# With regards to input method, you may consider fcitx, but we found that fcitx is very broken under in version 2 of WSL.
+#ibus-daemon -drx
 
 # Run a gui application
 echo GUI environment is now ready.
@@ -55,9 +55,6 @@ if [ -z "$userCommand" ]
 then
     echo Nothing to run!
 else
-    dbus-launch $userCommand & disown
-    # Alternatively,
-    #export $(dbus-launch --exit-with-x11 | grep DBUS_SESSION_BUS_ADDRESS)
-    #$userCommand & disown
+    $userCommand & disown
 fi
 exit

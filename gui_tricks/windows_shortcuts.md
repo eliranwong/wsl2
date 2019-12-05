@@ -77,7 +77,7 @@ with:
 
 3) Replace the whole line of "Target" field:
 
-> pengwin run "cd~; ~/bin/startmenu [put your command here]"
+> pengwin run "cd ~; ~/bin/startmenu [put your command here]"
 
 4) Change "Run" option to "Minimized"
 
@@ -101,7 +101,7 @@ Right-click the Windows shortcut file "Firefox ESR (WSL)" and select "Properties
 
 Change <b>Target</b> to:
 
-> pengwin run "cd~; ~/bin/startmenu firefox"
+> pengwin run "cd ~; ~/bin/startmenu firefox"
 
 Change <b>Run</b> to:
 
@@ -125,7 +125,7 @@ Right-click the Windows shortcut file "Terminal (WSL)" and select "Properties".
 
 Change Target to:
 
-> pengwin run "cd~; ~/bin/startmenu2 gnome-terminal --working-directory=\~"
+> pengwin run "cd ~; ~/bin/startmenu2 gnome-terminal --working-directory=\~"
 
 Change Run to:
 
@@ -145,7 +145,7 @@ Please <b><a href="https://github.com/eliranwong/wsl2/blob/master/gui_tricks/ter
 
 3) Type the location of the item, for example. 
 
-> pengwin.exe run "cd~; ~/bin/startmenu firefox"
+> pengwin.exe run "cd ~; ~/bin/startmenu firefox"
 
 4) Name your shortcut and select "Finish"
 

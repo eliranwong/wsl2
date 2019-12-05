@@ -32,11 +32,12 @@ select "OK"<br>
 > pkill ibus-daemon<br>
 > dbus-launch ibus-daemon -x -d
 
-# To automate the service
+# To automate the service [not recommended]
+
+You can set variables and automate the service.
 
 > nano ~/.profile
 
-dbus-launch ibus-daemon -x -d<br>
 export LC_CTYPE="zh_CN.UTF-8"<br>
 export XIM=ibus<br>
 export XIM_PROGRAM=/usr/bin/ibus<br>
@@ -44,8 +45,23 @@ export QT_IM_MODULE=ibus<br>
 export GTK_IM_MODULE=ibus<br>
 export XMODIFIERS=@im=ibus<br>
 export DefaultIMModule=ibus<br>
+dbus-launch ibus-daemon -drx<br>
 
-# Remove Potential Conflict with Fcitx
+It is <b>NOT recommended</b> to automate the service in this way, because "dbus-launch ibus-daemon -drx" work for some apps only.
+
+To make input method to work with all GUI apps, take a look at our tricks on running GUI apps.
+
+https://github.com/eliranwong/wsl2/tree/master/gui_tricks
+
+To launch GUI apps from terminal we recommend "gnome-terminal", read:<br>
+https://github.com/eliranwong/wsl2/blob/master/gui_tricks/terminal.md#option-3---use-gnome-terminal<br>
+and<br>
+https://github.com/eliranwong/wsl2/blob/master/gui_tricks/windows_shortcuts.md#take-gnome-terminal-as-an-example
+
+To launch GUI apps via Windows shortcut files, you may read our notes at:<br>
+https://github.com/eliranwong/wsl2/blob/master/gui_tricks/windows_shortcuts.md
+
+# Remove Potential Conflict with Fcitx [recommended]
 
 If you have fcitx installed via pengwing-setup, edit /etc/profile.d/fcitx.sh to remove fcitx-autostart and fcitx's variables.
 

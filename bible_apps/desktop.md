@@ -53,6 +53,9 @@ Add alias:
 
 # Create a Windows shortcut file [recommended]
 
+Download "startmenu" script first, read:<br>
+https://github.com/eliranwong/wsl2/blob/master/gui_tricks/windows_shortcuts.md#fixing-shortcuts-files
+
 After creating a Windows shortcut file, you can launch the app by:<br>
 - double-clicking a shortcut file<br>
 - using keyboard shortcuts

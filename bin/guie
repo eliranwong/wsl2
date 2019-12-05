@@ -20,7 +20,7 @@ export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
 echo DISPLAY=$DISPLAY
 
 # To work with Xresources
-xrdb -merge ~/.Xresources
+#xrdb -merge ~/.Xresources
 
 # To work better with mesa-utils
 export -n LIBGL_ALWAYS_INDIRECT

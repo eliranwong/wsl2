@@ -147,10 +147,16 @@ Please <b><a href="https://github.com/eliranwong/wsl2/blob/master/gui_tricks/ter
 
 > pengwin.exe run "cd~; ~/bin/startmenu firefox"
 
-4) Give a name
+4) Name your shortcut and select "Finish"
 
-5) Right-click, select "Properties"
+5) Right-click the created shortcut file, select "Properties"
 
-6) Remove the string in "Run in"
+6) Empty the string in "Run in"
 
-7) Run "Minimised"
+7) Run "Minimized"
+
+8) You can change icon or assign shortcuts on "Properties" panel.
+
+9) "Apply" the changes and double the file if your app is launched.
+
+10) If it is not lanuched, changed "startmenu" to "startmenu2" in step 3.

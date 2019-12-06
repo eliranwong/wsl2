@@ -29,3 +29,17 @@ URxvt.letterSpace: 0
 To copy and paste within urxvt itself:<br>
 Paste content from other gui applications:<br>
 alt+Ctrl+v
+
+# To work with our GUI scripts
+
+In our scripts available at:
+
+https://github.com/eliranwong/wsl2/tree/master/bin
+
+change this line:
+
+> #xrdb -merge ~/.Xresources
+
+to:
+
+> xrdb -merge ~/.Xresources

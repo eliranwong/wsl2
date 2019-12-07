@@ -119,7 +119,7 @@ https://github.com/eliranwong/wsl2/tree/master/terminal
 
 <b>Comment:</b>
 
-"gnome-terminal" is easier to be configured.  Copy & Paste in "gnome-terminal" can be done through right-click context menu or keyboard shortcuts.
+"gnome-terminal" is easier to be configured.  Copy & Paste in "gnome-terminal" can be done through right-click context menu or keyboard shortcuts.  We like "Tab" features of "gnome-terminal" too.
 
 # Tricks for Launching GUI Apps
 

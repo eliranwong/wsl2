@@ -64,6 +64,8 @@ First, open Windows "File Explorer" from where your video / audio file is locate
 
 > explorer.exe .
 
+[Remarks: Don't forget the dot "." at the end of the command line above.]
+
 Second, double-click your video / audio file.
 
 

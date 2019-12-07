@@ -152,7 +152,13 @@ wps office [https://www.wps.com/download] shows better compatibilities with ms f
 
 * mail client<br>
 mailspring is available for download at https://getmailspring.com/. Mailspring works with gmail signin whereas thunderbird doesn't.
-To verify gmail signin with mailspring, use Linux browser installed in WSL2 instead of using browser installed in Windows directory.  To work with signin of multiple gmail accounts use, chrome / firefox / opera instead of falkon.
+To verify gmail signin with mailspring, use Linux browser installed in WSL2 instead of using browser installed in Windows directory. Use Firefox / Chrome / Opera instead of falkon for gmail signin verification.
+
+* Web browser<br>
+In our testings, chrome and opera browsers work in WSL2, but not in WSL1<br>
+Chrome is available at: https://www.google.com/chrome/<br>
+Opera is available at: https://www.opera.com/<br>
+Chrome works the best with signin of mutliple gmail accounts.
 
 # Setup mlocate
 

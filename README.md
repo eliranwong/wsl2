@@ -181,6 +181,10 @@ or
 
 > mlocate
 
+# GUI for pacakage management
+
+> sudo synaptic
+
 # Workaround to work with USB drive in WSL2
 
 https://github.com/eliranwong/wsl2/blob/master/accessories/usb_drive.md

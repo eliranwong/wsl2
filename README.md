@@ -53,7 +53,9 @@ In our testing, windowed apps work better and look nicer in X410, as it offers a
 
 > sudo apt install apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils binutils dbus-x11 opencc youtube-dl
 
-# Example - download youtube video / audio 
+# Examples on Command-line Tools
+
+* Download Youtube Video / Audio
 
 https://github.com/eliranwong/wsl2/blob/master/multimedia/youtube-dl.md
 

@@ -3,6 +3,10 @@ Notes on setup of Windows Subsystem for Linux (version 2)
 
 Notes in this repository mainly describe the setup of pengwin & x410 in WSL2
 
+# Notes on enabling WSL
+
+https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
 # Notes on conversion between WSL1 & WSL2
 
 https://www.pengwin.dev/blog/2019/6/12/enable-wsl2-and-convert-existing-pengwin-installations
@@ -137,7 +141,7 @@ https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md
 
 # Setup Other GUI Apps
 
-sudo apt install geany geany-plugins rxvt-unicode gnome-terminal thunar sqlitebrowser firefox-esr falkon gthumb gedit gnome-keyring libsecret*
+sudo apt install geany geany-plugins rxvt-unicode gnome-terminal thunar sqlitebrowser firefox-esr falkon gthumb gedit gnome-keyring libsecret* libreoffice gimp
 
 [Remarks: ibus works with all GUI apps tested in both WSL1 & WSL2 whereas fcitx works only in some applications in WSL1.  At the time of writing, fcitx is broken in WSL2.]<br>
 [Remarks: Some of GUI apps above, e.g. falkon, work only in version 2 of WSL.]<br>

@@ -145,7 +145,7 @@ To install available packages:
 
 > sudo apt install gedit geany geany-plugins rxvt-unicode gnome-terminal thunar thunar-archive-plugin thunar-media-tags-plugin sqlitebrowser firefox-esr flashplugin-nonfree falkon gnome-keyring libsecret* libreoffice gthumb gimp
 
-[Remarks: ibus works with all GUI apps tested in both WSL1 & WSL2 whereas fcitx works only in some applications in WSL1.  At the time of writing, fcitx is broken in WSL2.]<br>
+[Remarks: ibus works with all the above GUI apps tested in both WSL1 & WSL2 whereas fcitx works only in some applications in WSL1.  At the time of writing, fcitx is broken in WSL2.]<br>
 [Remarks: Some of GUI apps above, e.g. falkon, work only in version 2 of WSL.]<br>
 [Remarks: gnome-keyring & libsecret* are required for running mailspring.]
 

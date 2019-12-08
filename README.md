@@ -168,6 +168,10 @@ Chrome is available at: https://www.google.com/chrome/<br>
 Opera is available at: https://www.opera.com/<br>
 Chrome works the best with signin of mutliple gmail accounts.
 
+# Additions of Fonts
+
+We find that we don't need to add any fonts, as with pengwin, our tested GUI applications can use Windows fonts directly.
+
 # Setup mlocate
 
 To install:<br>

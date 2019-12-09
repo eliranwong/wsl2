@@ -6,9 +6,10 @@
 # Connect external x-display server
 # Adapted from https://github.com/WhitewaterFoundry/pengwin-base/pull/61/commits/bbc85e3eb085400ac0fe21a20237041a2b0d7e42
 # check whether it is WSL1 for WSL2
-# The following line is for reference only.
-#if ( which wsl.exe >/dev/null ) && ( $(which wsl.exe) -l -v >/dev/null ) && [ $(wsl.exe -l -v 2>&1 | iconv -f Unicode -t $(locale charmap) | sed -e "s|\r||g" -e "s|\x00||g" | grep ${WSL_DISTRO_NAME} | awk '{print $NF}') -eq 2 ]; then
 if [[ -n ${WSL_INTEROP} ]]; then
+# The following line is an old approach for checking WSL version, keep for reference only.
+#if ( which wsl.exe >/dev/null ) && ( $(which wsl.exe) -l -v >/dev/null ) && [ $(wsl.exe -l -v 2>&1 | iconv -f Unicode -t $(locale charmap) | sed -e "s|\r||g" -e "s|\x00||g" | grep ${WSL_DISTRO_NAME} | awk '{print $NF}') -eq 2 ]; then
+
     #Export an enviroment variable for helping other processes
     export WSL2=1
     # enable external x display for WSL 2
@@ -28,6 +29,9 @@ else
     # enable external x display for WSL 1
     export DISPLAY=:0
 fi
+
+# An alternate approach, but it may not work in complex network setup
+#export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
 
 # Show DISPLAY variable
 echo DISPLAY=$DISPLAY

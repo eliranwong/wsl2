@@ -25,13 +25,13 @@ if [[ -n ${WSL_INTEROP} ]]; then
 
     unset wsl2_d_tmp
     unset ipconfig_exec
+    
+    # An alternate approach, but it may not work in complex network setup
+    #export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
 else
     # enable external x display for WSL 1
     export DISPLAY=:0
 fi
-
-# An alternate approach, but it may not work in complex network setup
-#export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
 
 # Show DISPLAY variable
 echo DISPLAY=$DISPLAY

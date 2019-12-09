@@ -8,13 +8,17 @@ In the following examples, we use a "Amazing Grace" youtube video for illustrati
 The video is available at the following link:<br>
 https://www.youtube.com/watch?v=CDdvReNKKuk
 
-# Example - download video / audio with default formats:
+# Example - download video / audio
+
+To download a video with default format:
 
 > youtube-dl https://www.youtube.com/watch?v=CDdvReNKKuk
 
 To download a youtube audio with default format:
 
 > youtube-dl -x https://www.youtube.com/watch?v=CDdvReNKKuk
+
+To download video / audio with specific formats, please read examples below:
 
 # For example, download a video in mp4
 

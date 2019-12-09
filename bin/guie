@@ -3,7 +3,6 @@
 # This script helps running gui applications under WSL2 (Windows Subsystem for Linux Version 2)
 # Fixes on various issues of running gui apps under WSL2 are integrated in this script.
 
-
 # Connect external x-display server
 # Adapted from https://github.com/WhitewaterFoundry/pengwin-base/pull/61/commits/bbc85e3eb085400ac0fe21a20237041a2b0d7e42
 # check whether it is WSL1 for WSL2

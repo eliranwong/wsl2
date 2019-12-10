@@ -51,7 +51,7 @@ In our testing, windowed apps work better and look nicer in X410, as it offers a
 
 # Setup Common Tools
 
-> sudo apt install apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils binutils dbus-x11 opencc youtube-dl gawk translate-shell
+> sudo apt install apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils binutils dbus-x11 youtube-dl libav-tools ffmpeg awk gawk translate-shell opencc
 
 # Examples on Command-line Tools
 

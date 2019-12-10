@@ -97,6 +97,8 @@ to:
 
 > unset LIBGL_ALWAYS_INDIRECT
 
+[Remarks: Make sure you have mesa-utils in place, read https://github.com/eliranwong/wsl2#setup-common-tools.  "unset LIBGL_ALWAYS_INDIRECT" is essential for running GUI apps using OpenGL.]
+
 # Remove /etc/profile.d/dbus.sh
 
 This file currently breaks input method and some other GUI apps.

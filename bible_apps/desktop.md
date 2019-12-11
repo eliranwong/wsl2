@@ -10,6 +10,12 @@ In the following example, we install desktop version of UniqueBible.app in pengw
 
 # Installation
 
+To work with the GUI of UniqueBible.app
+
+make sure you have "mesa-utils" installed:
+
+> sudo apt install mesa-utils
+
 Install "PYTHONPI" via pengwin-setup > PROGRAMMING
 
 Alternatively, run in terminal

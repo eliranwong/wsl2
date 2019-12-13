@@ -174,6 +174,14 @@ Chrome works the best with signin of mutliple gmail accounts.
 
 We find that we don't need to add any fonts, as with pengwin, our tested GUI applications can use Windows fonts directly.
 
+For examples, we have fonts "NSimSun" and "Calibri" come with Windows on our device.
+
+We assign Windows font "NSimSun" to a Linux terminal app:<br>
+https://github.com/eliranwong/wsl2/blob/master/terminal/urxvt.md#to-customise
+
+We assign Windows font "Calibri" to a Linux GUI app:<br>
+https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#change-default-font
+
 # Setup mlocate
 
 To install:<br>

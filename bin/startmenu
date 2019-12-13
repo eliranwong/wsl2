@@ -4,7 +4,6 @@
 # Fixes on various issues of running gui apps under WSL2 are integrated in this script.
 
 # Connect external x-display server
-# Adapted from https://github.com/WhitewaterFoundry/pengwin-base/pull/61/commits/bbc85e3eb085400ac0fe21a20237041a2b0d7e42
 # check whether it is WSL1 for WSL2
 if [[ -n ${WSL_INTEROP} ]]; then
 # The following line is an old approach for checking WSL version, keep for reference only.
@@ -12,22 +11,25 @@ if [[ -n ${WSL_INTEROP} ]]; then
 
     #Export an enviroment variable for helping other processes
     export WSL2=1
-    # enable external x display for WSL 2
 
-    ipconfig_exec=$(wslpath "C:\\Windows\\System32\\ipconfig.exe")
-    if ( which ipconfig.exe >/dev/null ); then
-        ipconfig_exec=$(which ipconfig.exe)
-    fi
+    # A simple approach, but it may not work in complex network setup
+    export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
 
-    wsl2_d_tmp="$(eval "$ipconfig_exec" | grep -n -m 1 "Default Gateway.*: [0-9a-z]" | cut -d : -f 1)"
-    wsl2_d_tmp="$(eval "$ipconfig_exec" | sed ''"$(expr $wsl2_d_tmp - 4)"','"$(expr $wsl2_d_tmp + 0)"'!d' | grep IPv4 | cut -d : -f 2 | sed -e "s|\s||g" -e "s|\r||g")"
-    export DISPLAY=$wsl2_d_tmp:0.0
+#    # An alternate approach below. It may work for complex network setup, but internet access is required.
+#    # It does not work without internet access.
+#    # This block of codes is adapted from https://github.com/WhitewaterFoundry/pengwin-base/pull/61/commits/bbc85e3eb085400ac0fe21a20237041a2b0d7e42
+#    ipconfig_exec=$(wslpath "C:\\Windows\\System32\\ipconfig.exe")
+#    if ( which ipconfig.exe >/dev/null ); then
+#        ipconfig_exec=$(which ipconfig.exe)
+#    fi
+#
+#    wsl2_d_tmp="$(eval "$ipconfig_exec" | grep -n -m 1 "Default Gateway.*: [0-9a-z]" | cut -d : -f 1)"
+#    wsl2_d_tmp="$(eval "$ipconfig_exec" | sed ''"$(expr $wsl2_d_tmp - 4)"','"$(expr $wsl2_d_tmp + 0)"'!d' | grep IPv4 | cut -d : -f 2 | sed -e "s|\s||g" -e "s|\r||g")"
+#    export DISPLAY=$wsl2_d_tmp:0.0
+#
+#    unset wsl2_d_tmp
+#    unset ipconfig_exec
 
-    unset wsl2_d_tmp
-    unset ipconfig_exec
-    
-    # An alternate approach, but it may not work in complex network setup
-    #export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
 else
     # enable external x display for WSL 1
     export DISPLAY=:0

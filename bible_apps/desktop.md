@@ -94,19 +94,17 @@ After creating a Windows shortcut file, you can launch the app by:<br>
 
 # Change default font
 
-Some characters may not be displayed correctly or nicely with your Linux default font.
+You can change the app's default font to your favourite font installed on your system, by editing file "config.py" with a text editor.
 
-You can change the default font for displaying text in UniqueBible.app.
+Find this line and change from:
 
-Change the 2nd line of ~/UniqueBible/htmlResources/theText.css, from
-
-> /* font-family: 'Calibri'; */
+> font = ''
 
 to:
 
-> font-family: 'Calibri';
+> font = 'Calibri'
 
-If you prefer a font other than 'Calibri', simply replace it with your favourite font.
+You may read more about "config.py" at https://github.com/eliranwong/UniqueBible/wiki/config_file#default-font
 
 # Shared marvelData folder in Windows Drive C [optional]
 

@@ -172,9 +172,9 @@ Chrome works the best with signin of mutliple gmail accounts.
 
 # Additions of Fonts
 
-We find that we don't need to add any fonts, as with pengwin, our tested GUI applications can use Windows fonts directly.
+We find that we don't need to add any fonts on Linux side, as with pengwin, our tested GUI applications can use fonts installed on Windows side directly.
 
-For examples, we have fonts "NSimSun" and "Calibri" come with Windows on our device.
+For examples, we have fonts "NSimSun" and "Calibri" instalaled on Windows on our device.
 
 We assign Windows font "NSimSun" to a Linux terminal app:<br>
 https://github.com/eliranwong/wsl2/blob/master/terminal/urxvt.md#to-customise
@@ -209,3 +209,8 @@ or
 
 https://github.com/eliranwong/wsl2/blob/master/accessories/usb_drive.md
 
+# Restart WSL Service
+
+Run from Windows PowerShell (Admin):
+
+> Get-Service LxssManager | Restart-Service

@@ -44,6 +44,22 @@ To make "vcxsrv" to work with WSL2, select from XLaunch "Disable Access Control"
 
 In our testing, windowed apps work better and look nicer in X410, as it offers a feature "DPI Scaling > High Qaulity".  You don't need to install VCXSRV if you have X410 installed.
 
+# Autostart Display Server
+
+It is better to start display server before launching a GUI app.  To start a display server automatically, for example, X410
+
+Open Windows "Run" app, 
+
+to open apps folder
+
+> shell:appsfolder
+
+to open startup folder
+
+> shell:startup
+
+To create link in startup, drag X410 from apps folder to startup folder
+
 # Update Installed Packages
 
 > sudo apt update<br>

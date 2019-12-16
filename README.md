@@ -67,7 +67,7 @@ To create link in startup, drag X410 from apps folder to startup folder
 
 # Setup Common Tools
 
-> sudo apt install apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils binutils dbus-x11 youtube-dl libav-tools ffmpeg gawk translate-shell opencc
+> sudo apt install apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libasound2 libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils binutils dbus-x11 youtube-dl libav-tools ffmpeg gawk translate-shell opencc
 
 # Examples on Command-line Tools
 

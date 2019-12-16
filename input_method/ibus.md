@@ -68,3 +68,10 @@ If you have fcitx installed via pengwing-setup, edit /etc/profile.d/fcitx.sh to 
 Alternatively,
 
 sudo rm /etc/profile.d/fcitx*
+
+# Using ibus with a touch-screen
+
+We found ibus works perfectly with Windows virtual keyboard.
+
+Press Ctrl + space on Windows virtual keyboard can switch ibus input methods.
+

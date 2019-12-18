@@ -38,3 +38,7 @@ https://github.com/avelino/awesome-go
 https://github.com/fatih/vim-go
 
 https://fyne.io/blog/2019/03/19/building-cross-platform-gui.html
+
+* uninstall
+
+https://golang.org/doc/install#uninstall

@@ -39,6 +39,8 @@ https://github.com/fatih/vim-go
 
 https://fyne.io/blog/2019/03/19/building-cross-platform-gui.html
 
+https://gobyexample.com
+
 * uninstall
 
 https://golang.org/doc/install#uninstall

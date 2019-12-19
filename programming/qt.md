@@ -2,13 +2,13 @@
 
 https://www.qt.io/qt-for-python
 
-# install PySide2
+# Install PySide2
 
 > python3 -m venv venv
 > source venv/bin/activate
 > pip3 install PySide2
 
-# examples
+# Examples
 
 > ls venv/lib/python3.7/site-packages/PySide2/examples
 

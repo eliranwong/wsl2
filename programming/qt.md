@@ -4,8 +4,8 @@ https://www.qt.io/qt-for-python
 
 # Install PySide2
 
-> python3 -m venv venv
-> source venv/bin/activate
+> python3 -m venv venv<br>
+> source venv/bin/activate<br>
 > pip3 install PySide2
 
 # Examples

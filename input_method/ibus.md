@@ -44,14 +44,14 @@ select "OK"<br>
 
 Create file /etc/profile.d/ibus.sh, with the following content:
 
-> export LC_CTYPE="zh_CN.UTF-8"
-> export XIM=ibus
-> export XIM_PROGRAM=/usr/bin/ibus
-> export QT_IM_MODULE=ibus
-> export GTK_IM_MODULE=ibus
-> export XMODIFIERS=@im=ibus
-> export DefaultIMModule=ibus
-> ibus-daemon -drx
+> export LC_CTYPE="zh_CN.UTF-8"<br>
+> export XIM=ibus<br>
+> export XIM_PROGRAM=/usr/bin/ibus<br>
+> export QT_IM_MODULE=ibus<br>
+> export GTK_IM_MODULE=ibus<br>
+> export XMODIFIERS=@im=ibus<br>
+> export DefaultIMModule=ibus<br>
+> ibus-daemon -drx<br>
 
 # Remove Potential Conflict with Fcitx [recommended]
 

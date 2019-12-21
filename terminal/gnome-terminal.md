@@ -1,5 +1,7 @@
 # gnome-terminal
 
+Official pengwin terminal window does not support display unicdoe well.  Even you can change the font for display, it fails to display multiple non-English languages at the same time.  Gnome-terminal is a good alternative to it.
+
 # To install
 
 > sudo apt install gnome-terminal

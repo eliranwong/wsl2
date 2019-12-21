@@ -19,7 +19,7 @@ select "OK"<br>
 
 # To start ibus service
 
-> dbus-launch ibus-daemon -x -d
+> dbus-launch ibus-daemon -drx
 
 # To setup
 
@@ -30,7 +30,7 @@ select "OK"<br>
 # To restart ibus service
 
 > pkill ibus-daemon<br>
-> dbus-launch ibus-daemon -x -d
+> dbus-launch ibus-daemon -drx
 
 # To automate the service [not recommended]
 

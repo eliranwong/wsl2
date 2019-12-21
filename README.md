@@ -153,9 +153,13 @@ https://github.com/eliranwong/wsl2/tree/master/terminal
 
 # Tricks for Launching GUI Apps
 
+Notes in the following link are written for pengwin version earlier than 1.3.4.  More issues on shortcuts are fixed in version 1.3.4.
+
 Read https://github.com/eliranwong/wsl2/blob/master/gui_tricks/terminal.md
 
 # Fixing Windows Startmenu Shortcuts
+
+Notes in the following link are written for pengwin version earlier than 1.3.4.  More issues on shortcuts are fixed in version 1.3.4.
 
 Read https://github.com/eliranwong/wsl2/blob/master/gui_tricks/windows_shortcuts.md
 

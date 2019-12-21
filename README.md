@@ -67,7 +67,7 @@ To create link in startup, drag X410 from apps folder to startup folder
 
 # Setup Common Tools
 
-> sudo apt install apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libasound2 libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils binutils dbus-x11 youtube-dl libav-tools ffmpeg gawk translate-shell opencc
+> sudo apt install apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libasound2 libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils lsb-release binutils dbus-x11 youtube-dl libav-tools ffmpeg gawk translate-shell opencc
 
 # Examples on Command-line Tools
 
@@ -78,8 +78,6 @@ https://github.com/eliranwong/wsl2/blob/master/multimedia/youtube-dl.md
 # Setup with pengwin-setup
 
 <b>RECOMMENDED:</b>
-
-GUI > FCITX [installed for testing, it is currently not working in WSL2]
 
 GUI > GUILIB
 
@@ -95,9 +93,13 @@ SETTINGS > COLORTOOL
 
 <b>NOT RECOMMENDED:</b>
 
-"GUI > HIDPI"
+GUI > FCITX [It breaks in many GUI apps under WSL2]
+
+"GUI > HIDPI" [instead, use X410 > DPI Scaling > High Quality (Windowed Apps Only)]
 
 # Edit /etc/profile.d/00-pengwin.sh
+
+The following applies to pengwin version earlier than 1.3.4 only.
 
 <b>CHANGE</b> from:
 
@@ -118,6 +120,8 @@ to:
 [Remarks: Make sure you have mesa-utils in place, read https://github.com/eliranwong/wsl2#setup-common-tools.  "unset LIBGL_ALWAYS_INDIRECT" is essential for running GUI apps using OpenGL.]
 
 # Remove /etc/profile.d/dbus.sh
+
+The following applies to pengwin version earlier than 1.3.4 only.
 
 This file currently breaks input method and some other GUI apps.
 

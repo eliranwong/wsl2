@@ -3,6 +3,16 @@ Notes on setup of Windows Subsystem for Linux (version 2)
 
 Notes in this repository mainly describe the setup of pengwin & x410 in WSL2
 
+# Use Latest Network Drivers
+
+In our testings, micrsoft "Windows Update" app does not detect newer version of wifi driver on one of our devices.  The old driver did cause an issue under WSL [e.g. <a href="https://github.com/microsoft/WSL/issues/4253">a link here</a>, <a href="https://github.com/WhitewaterFoundry/Pengwin/issues/561">another link here</a>].
+
+If you use Intel hardware, to make sure you get the latest drivers, go to the following link and install "Intel Driver & Support Assistant":
+
+https://www.intel.com/content/www/us/en/support/intel-driver-support-assistant.html
+
+Do a scan with the assistant and install the latest network drivers if newer versions are found.
+
 # Notes on enabling WSL
 
 https://docs.microsoft.com/en-us/windows/wsl/install-win10

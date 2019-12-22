@@ -6,7 +6,7 @@ https://github.com/eliranwong/UniqueBible
 
 In our testing, UniqueBible requires version 2 of WSL to work.  It does not run with version 1 of WSL.
 
-In the following example, we install desktop version of UniqueBible.app in pengwin with WSL2.
+The following example works with pengwin 1.3.4 under WSL2.
 
 # Installation
 

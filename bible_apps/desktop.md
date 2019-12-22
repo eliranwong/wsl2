@@ -36,7 +36,7 @@ Setup virtual environment & depedencies
 
 > pip3 install PySide2 PyPDF2 gdown python-docx
 
-# Create a Shortcut
+# Create an Alias
 
 For example:
 
@@ -53,14 +53,11 @@ Add alias:
 
 > echo "alias uba=~/shortcut_uba_Windows_wsl2.sh" >> ~/.bashrc
 
-# Run with alias:
+# Run Alias:
 
 > uba
 
 # Create a Windows shortcut file [recommended]
-
-Download "startmenu" script first, read:<br>
-https://github.com/eliranwong/wsl2/blob/master/gui_tricks/windows_shortcuts.md#fixing-shortcuts-files
 
 After creating a Windows shortcut file, you can launch the app by:<br>
 - double-clicking a shortcut file<br>
@@ -68,27 +65,29 @@ After creating a Windows shortcut file, you can launch the app by:<br>
 
 <b>To create a Windows shortcut file for UniqueBible.app, for example:</b>
 
-1) Right-click an empty area on desktop
+1) Make file "main.py" executable:
 
-2) New > Shortcut
+> chmod +x $HOME/UniqueBible/main.py
 
-3) Type the location of the item, for example. 
+2) Right-click an empty area on desktop
 
-> pengwin run "cd ~/UniqueBible; source venv/bin/activate; ~/bin/startmenu python3 main.py"
+3) New > Shortcut
 
-4) Name your shortcut, e.g. "UniqueBible.app (WSL)", and select "Finish"
+4) Type the location of the item, for example. 
 
-5) Right-click the created shortcut file, select "Properties"
+> pengwin run "cd $HOME/UniqueBible; bash -l -c $HOME/UniqueBible/main.py"
 
-6) Empty the string in "Start in"
+5) Name your shortcut, e.g. "UniqueBible.app (WSL)", and select "Finish"
 
-7) In the field of "Shortcut key:", pressing "Ctrl + Alt + B" at the same time
+6) Right-click the created shortcut file, select "Properties"
 
-8) Run "Minimized"
+7) Empty the string in "Start in"
 
-9) Download this icon https://github.com/eliranwong/UniqueBible/blob/master/htmlResources/theText.ico
+8) In the field of "Shortcut key:", pressing "Ctrl + Alt + B" at the same time
 
-10) Change icon
+9) Run "Minimized"
+
+10) Download this icon https://github.com/eliranwong/UniqueBible/blob/master/htmlResources/theText.ico and assign it as the shortcut icon.
 
 <img src="shortcut_properties.png" />
 

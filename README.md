@@ -249,6 +249,26 @@ or
 
 https://github.com/eliranwong/wsl2/blob/master/accessories/usb_drive.md
 
+# Terminate a Distro
+
+To check the name and version of a distro
+
+> wsl.exe -l -v
+
+To terminate a distro, e.g.
+
+> wsl.exe -t WLinux
+
+> wsl.exe -t Debian
+
+> wsl.exe -t Ubuntu
+
+# Shutdown Everything
+
+Immediately terminates all running distributions and the WSL 2 lightweight utility virtual machine.
+
+> wsl.exe --shutdown
+
 # Restart WSL Service
 
 Run from Windows PowerShell (Admin):

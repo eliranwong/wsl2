@@ -20,7 +20,7 @@ Install "PYTHONPI" via pengwin-setup > PROGRAMMING
 
 Alternatively, run in terminal
 
-> sudo apt install python3 python3-setuptools python3-pip python3-venv
+> sudo apt install python3 python3-setuptools python3-pip python3-venv diff_match_patch
 
 Download UniqueBible
 

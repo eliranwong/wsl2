@@ -36,7 +36,7 @@ Setup virtual environment & depedencies
 
 > pip3 install PySide2 PyPDF2 gdown python-docx
 
-# Create an Alias
+# Create a Linux Alias
 
 For example:
 
@@ -51,13 +51,38 @@ Add permission:
 
 Add alias:
 
-> echo "alias uba=~/shortcut_uba_Windows_wsl2.sh" >> ~/.bashrc
+> echo "alias uniquebible=~/shortcut_uba_Windows_wsl2.sh" >> ~/.bashrc
 
-# Run Alias:
+To run:
 
-> uba
+> uniquebible
 
-# Create a Windows shortcut file [recommended]
+# Create a Windows shortcut [recommended for pengwin version 1.3.4+]
+
+1) Make file "main.py" executable:
+
+> chmod +x $HOME/UniqueBible/main.py
+
+2) Run in terminal:
+
+> bash /usr/local/pengwin-setup.d/generate-shortcut.sh -I
+
+3) Enter the following when input is prompted:
+
+> [input] Command to execute: ~/UniqueBible/main.py<br>
+
+> [input] Shortcut name [optional, ENTER for default]: UniqueBible.app<br>
+
+> [input] Is it a GUI application? [if yes, input 1; if no, input 0]: 1<br>
+<b><i>Remarks: </i></b>: change the default 0 to 1 manually.
+
+> [input] Pre-executed command [optional, ENTER for default]: cd ~/UniqueBible;<br>
+<b><i>Remarks: </i></b>: Don't forget the ending ";" above.
+
+> [input] Custom icon Linux path (support ico/png/xpm/svg) [optional, ENTER for default]: /home/eliranwong/UniqueBible/htmlResources/theText.ico<br>
+<b><i>Remarks: </i></b>: Use literal full path for this option.  Don't use "~" or "$HOME".  Change "eliranwong" to your username.
+
+# Create a Windows shortcut directly on Windows
 
 After creating a Windows shortcut file, you can launch the app by:<br>
 - double-clicking a shortcut file<br>

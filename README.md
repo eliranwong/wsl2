@@ -151,6 +151,8 @@ The problem with creating shortcuts with pengwin-setup is that existing shortcut
 
 A workaround is to use /usr/local/pengwin-setup.d/generate-shortcut.sh directly.  For example: https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#create-a-windows-shortcut-recommended-for-pengwin-version-134
 
+Alternatively, you can create a Windows shrotcut directly with Windows GUI.  For example: https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#create-a-windows-shortcut-directly-on-windows
+
 # WSL Utilities 
 
 <a href='https://github.com/wslutilities/wslu'>WSL Utilities</a> are bundled with pengwin.  Read more about these utilities at https://github.com/wslutilities/wslu.
@@ -162,6 +164,8 @@ For example, to open a website, say https://github.com, using Windows default we
 * <b>To WSL2 Users</b>, wslusc, bundled with pengwin version 1.3.4 does not work with WSL2.
 
 Use /usr/local/pengwin-setup.d/generate-shortcut.sh instead.  For example: https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#create-a-windows-shortcut-recommended-for-pengwin-version-134
+
+Alternatively, you can create a Windows shrotcut directly with Windows GUI.  For example: https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#create-a-windows-shortcut-directly-on-windows
 
 # Setup Bible Apps
 

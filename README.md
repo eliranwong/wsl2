@@ -151,15 +151,9 @@ https://github.com/eliranwong/wsl2/blob/master/input_method/ibus.md
 
 # Setup Terminal Apps
 
-pengwin terminal is not good for displaying different languages at the same time.  For example, pengwin terminal window failed to compare English, Chinese, Hebrew & Greek bible verses at the same time.
+For issues with official pengwin terminal window and alternatives, you may read:#
 
-We recommend "rxvt-unicode" and "gnome-terminal" as alternatives, read this link for setup:
-
-https://github.com/eliranwong/wsl2/tree/master/terminal
-
-<b>Comment:</b>
-
-"gnome-terminal" is easier to be configured.  Copy & Paste in "gnome-terminal" can be done through right-click context menu or keyboard shortcuts.  We like "Tab" features of "gnome-terminal" too.
+https://github.com/eliranwong/wsl2/blob/master/terminal/Readme.md
 
 # Tricks for Launching GUI Apps
 

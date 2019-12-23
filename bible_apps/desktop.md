@@ -82,6 +82,12 @@ To run:
 > [input] Custom icon Linux path (support ico/png/xpm/svg) [optional, ENTER for default]: /home/eliranwong/UniqueBible/htmlResources/theText.ico<br>
 <b><i>Remarks: </i></b>: Use literal full path for this option.  Don't use "~" or "$HOME".  Change "eliranwong" to your username.
 
+Below is a screenshot on what it should look like:
+
+<img src="screenshot_create_shortcut.png" />
+
+4) Find your created shortcut file on your desktop:
+
 # Create a Windows shortcut directly on Windows
 
 After creating a Windows shortcut file, you can launch the app by:<br>

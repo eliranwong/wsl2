@@ -218,6 +218,10 @@ https://github.com/eliranwong/wsl2/blob/master/terminal/urxvt.md#to-customise
 We assign Windows font "Calibri" to a Linux GUI app:<br>
 https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#change-default-font
 
+To build font information cache files:
+
+> fc-cache -f -v
+
 To check all available fonts:
 
 > fc-list

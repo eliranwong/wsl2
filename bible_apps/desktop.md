@@ -112,7 +112,9 @@ After creating a Windows shortcut file, you can launch the app by:<br>
 
 4) Type the location of the item, for example. 
 
-> pengwin run "cd $HOME/UniqueBible; bash -l -c $HOME/UniqueBible/main.py"
+> C:\Windows\System32\wscript.exe C:\\Users\\elira\wslu\runHidden.vbs pengwin.exe run "cd $HOME/UniqueBible; bash -l -c $HOME/UniqueBible/main.py"
+
+<b><i>Remarks: </i></b>: Change "elira" above to your Windows username.
 
 5) Name your shortcut, e.g. "UniqueBible.app (WSL)", and select "Finish"
 
@@ -122,9 +124,7 @@ After creating a Windows shortcut file, you can launch the app by:<br>
 
 8) In the field of "Shortcut key:", pressing "Ctrl + Alt + B" at the same time
 
-9) Run "Minimized"
-
-10) Download this icon https://github.com/eliranwong/UniqueBible/blob/master/htmlResources/theText.ico and assign it as the shortcut icon.
+9) Download this icon https://github.com/eliranwong/UniqueBible/blob/master/htmlResources/theText.ico and assign it as the shortcut icon.
 
 <img src="shortcut_properties.png" />
 

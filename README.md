@@ -133,9 +133,9 @@ Two suggestions here:
 
 2) To assign QStandardPaths for running Qt applications, app the following lines to file "~/.profile":
 
-mkdir -p /tmp/runtime-$USER
-chmod 7700 /tmp/runtime-$USER
-export XDG_RUNTIME_DIR=/tmp/runtime-$USER
+> mkdir -p /tmp/runtime-$USER<br>
+> chmod 7700 /tmp/runtime-$USER<br>
+> export XDG_RUNTIME_DIR=/tmp/runtime-$USER
 
 # Fixing Windows Startmenu Shortcuts
 

@@ -2,7 +2,7 @@
 
 Two terminal windows are compared with the following screenshot:
 
-<img src="screenshots/screenshot_compare_terminals.png">
+<img src="screenshot_compare_terminals.png">
 
 The one on the left is pengwin terminal, the one on the right is gnome-terminal.
 

@@ -169,9 +169,9 @@ Read https://github.com/eliranwong/wsl2/blob/master/gui_tricks/terminal.md
 
 # Fixing Windows Startmenu Shortcuts
 
-Notes in the following link are written for pengwin version earlier than 1.3.4.  More issues on shortcuts are fixed in version 1.3.4.
+For issues before pengwin version 1.3.4, you may read https://github.com/WhitewaterFoundry/Pengwin/issues/551
 
-Read https://github.com/eliranwong/wsl2/blob/master/gui_tricks/windows_shortcuts.md
+Issued had been fixed in version 1.3.4.
 
 # Setup Bible Apps
 

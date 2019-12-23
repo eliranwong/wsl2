@@ -86,7 +86,13 @@ Below is a screenshot on what it should look like:
 
 <img src="screenshot_create_shortcut.png" />
 
-4) Find your created shortcut file on your desktop:
+4) Find your created shortcut file on your desktop.
+
+5) [Optional] You can assign keyboard shortcuts, by:
+
+* Right-click the created shortcut file, select "Properties".
+* In the field of "Shortcut key:", pressing "Ctrl + Alt + B" at the same time.
+* Select "OK" or "Apply" to apply the change.
 
 # Create a Windows shortcut directly on Windows
 

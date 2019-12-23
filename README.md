@@ -149,7 +149,7 @@ select GUI > STARTMENU
 
 The problem with creating shortcuts with pengwin-setup is that existing shortcuts are created again each time you run pengwin-setup > GUI > STARTMENU.  For examples, after installing 10 gui apps and run pengwin-setup > GUI > STARTMENU.  When you install one more gui app, running pengwin-setup > GUI > STARTMENU is ineffective because it creates shortcuts for all 11 gui apps.
 
-A workaround is to use /usr/local/pengwin-setup.d/generate-shortcut.sh directly.
+A workaround is to use /usr/local/pengwin-setup.d/generate-shortcut.sh directly.  For example: https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#create-a-windows-shortcut-recommended-for-pengwin-version-134
 
 # WSL Utilities 
 
@@ -161,7 +161,7 @@ For example, to open a website, say https://github.com, using Windows default we
 
 * <b>To WSL2 Users</b>, wslusc, bundled with pengwin version 1.3.4 does not work with WSL2.
 
-Use /usr/local/pengwin-setup.d/generate-shortcut.sh instead.
+Use /usr/local/pengwin-setup.d/generate-shortcut.sh instead.  For example: https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#create-a-windows-shortcut-recommended-for-pengwin-version-134
 
 # Setup Bible Apps
 

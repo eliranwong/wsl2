@@ -107,40 +107,6 @@ GUI > FCITX [It breaks in many GUI apps under WSL2]
 
 "GUI > HIDPI" [instead, use X410 > DPI Scaling > High Quality (Windowed Apps Only)]
 
-# Edit /etc/profile.d/00-pengwin.sh
-
-The following applies to pengwin version earlier than 1.3.4 only.
-
-<b>CHANGE</b> from:
-
-> export DISPLAY=:0
-
-to:
-
-> export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
-
-<b>CHANGE</b> from:
-
-> export LIBGL_ALWAYS_INDIRECT=1
-
-to:
-
-> unset LIBGL_ALWAYS_INDIRECT
-
-[Remarks: Make sure you have mesa-utils in place, read https://github.com/eliranwong/wsl2#setup-common-tools.  "unset LIBGL_ALWAYS_INDIRECT" is essential for running GUI apps using OpenGL.]
-
-# Remove /etc/profile.d/dbus.sh
-
-The following applies to pengwin version earlier than 1.3.4 only.
-
-This file currently breaks input method and some other GUI apps.
-
-> sudo rm /etc/profile.d/dbus.sh
-
-We fix the dbus_session issues with our tricks at:
-
-https://github.com/eliranwong/wsl2/blob/master/gui_tricks/terminal.md
-
 # Setup Input Method
 
 "fcitx", bundled with pengwin, is not working in WSL2 at the time of writing.
@@ -151,21 +117,51 @@ https://github.com/eliranwong/wsl2/blob/master/input_method/ibus.md
 
 # Setup Terminal Apps
 
-For issues with official pengwin terminal window and alternatives, you may read:#
+For issues with official pengwin terminal window and alternatives, you may read:
 
 https://github.com/eliranwong/wsl2/blob/master/terminal/Readme.md
 
 # Tricks for Launching GUI Apps
 
-Notes in the following link are written for pengwin version earlier than 1.3.4.  More issues on shortcuts are fixed in version 1.3.4.
+There were mutliple issues about running GUI apps with pengwin version earlier than 1.3.4 under WSL2.  Most know issues had been fixed with pengwin version 1.3.4.
 
-Read https://github.com/eliranwong/wsl2/blob/master/gui_tricks/terminal.md
+Two suggestions here:
+
+1) Add the following line to "~/.profile", if you need to work with .Xresources, e.g. https://github.com/eliranwong/wsl2/blob/master/terminal/urxvt.md#to-customise:
+
+> xrdb -merge ~/.Xresources
+
+2) To assign QStandardPaths for running Qt applications, app the following lines to file "~/.profile":
+
+mkdir -p /tmp/runtime-$USER
+chmod 7700 /tmp/runtime-$USER
+export XDG_RUNTIME_DIR=/tmp/runtime-$USER
 
 # Fixing Windows Startmenu Shortcuts
 
-For issues before pengwin version 1.3.4, you may read https://github.com/WhitewaterFoundry/Pengwin/issues/551
+For issues before pengwin version 1.3.4, you may read https://github.com/WhitewaterFoundry/Pengwin/issues/551.  Issues mentioned in the post had been fixed in pengwin version 1.3.4.
 
-Issued had been fixed in version 1.3.4.
+After installing multiple gui apps, run:
+
+> pengwin-setup
+
+select GUI > STARTMENU
+
+The problem with creating shortcuts with pengwin-setup is that existing shortcuts are created again each time you run pengwin-setup > GUI > STARTMENU.  For examples, after installing 10 gui apps and run pengwin-setup > GUI > STARTMENU.  When you install one more gui app, running pengwin-setup > GUI > STARTMENU is ineffective because it creates shortcuts for all 11 gui apps.
+
+A workaround is to use /usr/local/pengwin-setup.d/generate-shortcut.sh directly.
+
+# WSL Utilities 
+
+<a href='https://github.com/wslutilities/wslu'>WSL Utilities</a> are bundled with pengwin.  Read more about these utilities at https://github.com/wslutilities/wslu.
+
+For example, to open a website, say https://github.com, using Windows default web browser, run
+
+> wslview https://github.com
+
+* <b>To WSL2 Users</b>, wslusc, bundled with pengwin version 1.3.4 does not work with WSL2.
+
+Use /usr/local/pengwin-setup.d/generate-shortcut.sh instead.
 
 # Setup Bible Apps
 

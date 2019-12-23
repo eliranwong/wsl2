@@ -1,7 +1,7 @@
 # wsl2
 Notes on setup of Windows Subsystem for Linux (version 2)
 
-Notes in this repository mainly describe the setup of pengwin & x410 in WSL2
+Notes in this repository mainly describe the setup of pengwin version 1.3.4 in WSL2
 
 # Use Latest Network Drivers
 

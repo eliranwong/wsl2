@@ -17,3 +17,7 @@ We tested the following terminal apps on WSL2.
 gnome-terminal: https://github.com/eliranwong/wsl2/blob/master/terminal/gnome-terminal.md
 
 rxvt-unicode: https://github.com/eliranwong/wsl2/blob/master/terminal/urxvt.md
+
+# Comment:
+
+"gnome-terminal" is easier to be configured.  Copy & Paste in "gnome-terminal" can be done through right-click context menu or keyboard shortcuts.  We like "Tab" features of "gnome-terminal" too.

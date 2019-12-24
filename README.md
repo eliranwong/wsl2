@@ -27,8 +27,6 @@ DPI Scaling > High Quality (Windowed Apps Only)
 
 Shared Clipboard > Enable
 
-Shared Clipboard > Auto copy to Windows after selection
-
 Miscellaneous Options > Capture Windows Key
 
 To work with WSL2, select "Allow Public Access"

@@ -198,9 +198,9 @@ Chrome is available at: https://www.google.com/chrome/<br>
 Opera is available at: https://www.opera.com/<br>
 Chrome works the best with signin of mutliple gmail accounts.
 
-# Additions of Fonts
+# Use Windows Fonts
 
-We find that we don't need to add any fonts on Linux side, as with pengwin, our tested GUI applications can use fonts installed on Windows side directly.
+We find that we don't have to to add any fonts on Linux side, as with pengwin, our tested GUI applications can use fonts installed on Windows side directly.
 
 For examples, we have fonts "NSimSun" and "Calibri" instalaled on Windows on our device.
 
@@ -218,7 +218,9 @@ To check all available fonts:
 
 > fc-list
 
-* For additional fonts, you may consider, e.g. ubuntu fonts:
+# Additional Fonts
+
+To install additional fonts, e.g. ubuntu fonts:
 
 1) Download the latest version of Ubuntu Fonts from http://font.ubuntu.com/ or run:<br>
 > wget https://assets.ubuntu.com/v1/0cef8205-ubuntu-font-family-0.83.zip

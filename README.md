@@ -218,6 +218,23 @@ To check all available fonts:
 
 > fc-list
 
+* For additional fonts, you may consider, e.g. ubuntu fonts:
+
+1) Download the latest version of Ubuntu Fonts from http://font.ubuntu.com/ or run:<br>
+> wget https://assets.ubuntu.com/v1/0cef8205-ubuntu-font-family-0.83.zip
+
+2) Unzip font package:<br>
+> unzip 0cef8205-ubuntu-font-family-0.83.zip
+
+3) Create user fonts directory:<br>
+> mkdir -p ~/.fonts
+
+4) Copy ubuntu fonts to user fonts directory:<br>
+> cp -r ubuntu-font-family-0.83/ ~/.fonts
+
+5) Build fonts information cache files:
+> fc-cache -f -v
+
 # Setup mlocate
 
 To install:<br>

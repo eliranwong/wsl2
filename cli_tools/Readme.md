@@ -41,8 +41,12 @@ sqlite3 -header -separator "[TAB HERE]" FILE.sqlite "select * from TABLE;" > out
 
 # Conversion between Traditional and Simplified Chinese
 
-Convert traditional Chinese to simplified Chinese<br>:
+Convert traditional Chinese to simplified Chinese:<br>
 > opencc -i [inputFile] -o [outputFile] -c t2s.json
 
-Convert simplified Chinese to traditional Chinese<br>:
+Convert simplified Chinese to traditional Chinese:<br>
 > opencc -i [inputFile] -o [outputFile] -c s2t.json
+
+# Download Video / Audio from YouTube
+
+https://github.com/eliranwong/wsl2/blob/master/multimedia/youtube-dl.md

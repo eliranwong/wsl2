@@ -7,20 +7,20 @@ To sort TAB-delimited text file by first 3 columns:<br>
 > sort -b -n -t "[TAB HERE]" -k 1,3 test.txt > test2.txt
 
 To add line numbers to text file, starting from number 1:<br>
-nl -nln -v 1 -s "[TAB HERE]" test.txt > test2.txt<br>
+> nl -nln -v 1 -s "[TAB HERE]" test.txt > test2.txt<br>
 [Remarks: -v 1 -s "[TAB HERE]" is implemented by default, could be omitted.]
 
 To change file extensions of multiple files:<br>
-for file in *.html; do mv "$file" "${file%.html}.txt"; done
+> for file in *.html; do mv "$file" "${file%.html}.txt"; done
 
 To add an empty line at the end of a file:<br>
-echo "" >> test.txt
+> echo "" >> test.txt
 
 To add an empty line in multiple files:<br>
-for file in *.txt; do echo "" >> $file; done
+> for file in *.txt; do echo "" >> $file; done
 
 To combine multiple files in a single file:<br>
-cat *.txt > combined.txt
+> cat *.txt > combined.txt
 
 Tutorial on string manipulation:<br>
 https://www.tldp.org/LDP/abs/html/string-manipulation.html

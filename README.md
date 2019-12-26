@@ -83,6 +83,22 @@ To create link in startup, drag X410 from apps folder to startup folder
 
 https://github.com/eliranwong/wsl2/blob/master/multimedia/youtube-dl.md
 
+* others
+
+https://github.com/eliranwong/wsl2/blob/master/cli_tools/Readme.md
+
+# Edit 00-pengwin.sh
+
+> sudo nano /etc/profile.d/00-pengwin.sh
+
+Change from:
+
+> alias ll='ls -al'
+
+To:
+
+> alias ll='ls -alh'
+
 # Setup with pengwin-setup
 
 <b>RECOMMENDED:</b>

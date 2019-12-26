@@ -31,3 +31,28 @@ shift + ctrl + v<br>
 
 Menubar > Edit > Profile Preferences
 
+# To work with Thunar's "Custom Actions"
+
+* Edit the pre-configured Custom Action - "Open Terminal Here"
+
+In Thunar, select "Edit > Custom Actions > Open Terminal Here > Edit the currently selected action."
+
+Enter in command:
+
+> gnome-terminal --working-directory %f
+
+* Add a Custom Action - "Open Terminal in Parent Directory"
+
+In Thunar, select "Edit > Custom Actions > Add a new custome action."
+
+Enter in command:
+
+> gnome-terminal --working-directory %d
+
+Use Startup Notification & Add Icon
+
+In section, "Appearance Conditions":
+
+File Pattern: *
+
+Appears if selection contains: Audio Files, Image Files, Text Files, Video Files, Other Files

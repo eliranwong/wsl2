@@ -37,10 +37,10 @@ sqlite3 FILE.sqlite<br>
 > .quit<br>
 
 To export without header:<br>
-sqlite3 -separator "[TAB HERE]" FILE.sqlite "select * from TABLE;" > output_filename.csv
+> sqlite3 -separator "[TAB HERE]" FILE.sqlite "select * from TABLE;" > output_filename.csv
 
 To export with header:<br>
-sqlite3 -header -separator "[TAB HERE]" FILE.sqlite "select * from TABLE;" > output_filename.csv
+> sqlite3 -header -separator "[TAB HERE]" FILE.sqlite "select * from TABLE;" > output_filename.csv
 
 # Conversion between Traditional and Simplified Chinese
 

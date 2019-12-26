@@ -1,7 +1,10 @@
 # Common tasks of text processing
 
+To split a single text file into multiple ones, e.g.:<br>
+> split -d -l 500 [filename] [optional_prefix_name]
+
 To sort TAB-delimited text file by first 3 columns:<br>
-sort -b -n -t "[TAB HERE]" -k 1,3 test.txt > test2.txt
+> sort -b -n -t "[TAB HERE]" -k 1,3 test.txt > test2.txt
 
 To add line numbers to text file, starting from number 1:<br>
 nl -nln -v 1 -s "[TAB HERE]" test.txt > test2.txt<br>

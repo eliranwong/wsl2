@@ -278,6 +278,10 @@ To terminate a distro, e.g.
 
 > wsl.exe -t Ubuntu
 
+To create an alias, e.g.
+
+> echo 'alias shutdown="wsl.exe -t WLinux"' >> ~/.bashrc
+
 # Shutdown Everything
 
 Immediately terminates all running distributions and the WSL 2 lightweight utility virtual machine.

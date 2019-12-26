@@ -27,6 +27,16 @@ https://www.tldp.org/LDP/abs/html/string-manipulation.html
 
 More at: http://www.tldp.org/LDP/abs/html/
 
+# Search & Replace
+
+Simple:
+
+> sed -E -i.bak 's/[search]/[replace]/g' [file]
+
+Dynamic, use the following script:
+
+https://github.com/eliranwong/UniqueBible/blob/master/RegexSearch.py
+
 # sqlite3 Import / Export
 
 Import a TAB-delimited text file into a table:<br>

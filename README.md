@@ -167,6 +167,16 @@ A workaround is to use /usr/local/pengwin-setup.d/generate-shortcut.sh directly.
 
 Alternatively, you can create a Windows shrotcut directly with Windows GUI.  For example: https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#create-a-windows-shortcut-directly-on-windows
 
+# Open a Windows folder on Explorer with Linux Shell
+
+On Windows Explorer,
+
+right-click and select "Open with Pengwin"<br>
+<i>or</i><br>
+shift & right-click and select "Open with Pengwin"<br>
+<i>or</i><br>
+shift & right-click and select "Open Linux shell here"
+
 # WSL Utilities 
 
 <a href='https://github.com/wslutilities/wslu'>WSL Utilities</a> are bundled with pengwin.  Read more about these utilities at https://github.com/wslutilities/wslu.
@@ -180,6 +190,24 @@ For example, to open a website, say https://github.com, using Windows default we
 Use /usr/local/pengwin-setup.d/generate-shortcut.sh instead.  For example: https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#create-a-windows-shortcut-recommended-for-pengwin-version-134
 
 Alternatively, you can create a Windows shrotcut directly with Windows GUI.  For example: https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#create-a-windows-shortcut-directly-on-windows
+
+# Setup Microsoft Visual Studio Code
+
+Do NOT install Visual Studio Code with pengwin-setup.
+
+Install the Windows version.<br>
+<b>AND</b><br>
+Install extension "Remote - WSL"
+
+With this setup, you can use Visual Studio Code from both Windows and WSL.
+
+To launch Visual Studio Code from a Linux terminal, run:
+
+> code
+
+or
+
+> code [filename]
 
 # Setup Bible Apps
 

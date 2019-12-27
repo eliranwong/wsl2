@@ -29,11 +29,15 @@ More at: http://www.tldp.org/LDP/abs/html/
 
 # Search & Replace
 
-Simple:
+* Simple:
 
 > sed -E -i.bak 's/[search]/[replace]/g' [file]
 
-Dynamic, use the following script:
+e.g. an example of back references:
+
+> echo "test testing" | sed -E 's/(t)(e)s\1/\2/g'
+
+* Dynamic, use the following script:
 
 https://github.com/eliranwong/UniqueBible/blob/master/RegexSearch.py
 

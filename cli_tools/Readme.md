@@ -49,9 +49,25 @@ e.g. executing multiple commands
 
 > echo "My_name_is_Wong" | awk -F '_' '{gsub($4,"Eliran_Wong",$0); print$0}'
 
-* Dynamic script with python, use the following script:
+* A dynamic script written with python:
 
-https://github.com/eliranwong/UniqueBible/blob/master/RegexSearch.py
+https://github.com/eliranwong/bible-verse-parser/blob/master/RegexSearch.py
+
+To use the script on its own, edit the content under function 'def processInputText(self, text):' and run:
+
+> python3 RegexSearch.py
+
+or
+
+> python3 RegexSearch.py [a_file_name]
+
+or
+
+> python3 RegexSearch.py [a_folder_name]
+
+To use the script to build other script, for example:
+
+https://github.com/eliranwong/bible-verse-parser/blob/master/BibleVerseParser.py
 
 # sqlite3 Import / Export
 

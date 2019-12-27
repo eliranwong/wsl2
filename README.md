@@ -119,7 +119,9 @@ SETTINGS > COLORTOOL
 
 GUI > FCITX [It breaks in many GUI apps under WSL2]
 
-"GUI > HIDPI" [instead, use X410 > DPI Scaling > High Quality (Windowed Apps Only)]
+GUI > HIDPI [instead, use X410 > DPI Scaling > High Quality (Windowed Apps Only)]
+
+EDITORS > CODE [read: https://github.com/eliranwong/wsl2/blob/master/README.md#setup-microsoft-visual-studio-code]
 
 # Setup Input Method
 
@@ -337,3 +339,17 @@ Immediately terminates all running distributions and the WSL 2 lightweight utili
 Run from Windows PowerShell (Admin):
 
 > Get-Service LxssManager | Restart-Service
+
+# Backup & Restore a WSL Distro
+
+To backup, open Windows PowerShell and run, e.g.:
+
+> wsl --export WLinux WLinux.tar
+
+> wsl --export Ubuntu Ubuntu.tar
+
+> wsl --export Debian Debian.tar
+
+To restore, e.g.
+
+> wsl --import WLinux C:\Users\Eliran\WLinux C:\Users\Eliran\WLinux.tar

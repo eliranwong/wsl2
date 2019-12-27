@@ -29,7 +29,7 @@ More at: http://www.tldp.org/LDP/abs/html/
 
 # Search & Replace
 
-* Simple:
+* Simple tasks with sed:
 
 > sed -E -i.bak 's/[search]/[replace]/g' [file]
 
@@ -43,7 +43,13 @@ e.g. executing multiple commands
 
 > sed -E -i.bak -f myScript.sed inputFile.txt
 
-* Dynamic, use the following script:
+* Simple tasks with awk / gawk:
+
+> echo "My_name_is_Wong" | awk -F '_' '{surname=$4; $4="Eliran"; print $4 " " surname; print $0 " " surname}'
+
+> echo "My_name_is_Wong" | awk -F '_' '{gsub($4,"Eliran_Wong",$0); print$0}'
+
+* Dynamic script with python, use the following script:
 
 https://github.com/eliranwong/UniqueBible/blob/master/RegexSearch.py
 

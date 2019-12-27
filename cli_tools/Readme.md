@@ -69,6 +69,20 @@ To use the script to build other script, for example:
 
 https://github.com/eliranwong/bible-verse-parser/blob/master/BibleVerseParser.py
 
+# rar & unrar
+
+To list files in a rar file, e.g. file.rar:
+
+> unrar l file.rar
+
+To extract a rar file, e.g. file.rar:
+
+> unrar e file.rar
+
+To pack a folder, e.g. myFolder, into a rar file, e.g. file.rar:
+
+> rar a file.rar myFolder
+
 # sqlite3 Import / Export
 
 Import a TAB-delimited text file into a table:<br>

@@ -1,6 +1,6 @@
 # Common tasks of text processing
 
-To split a single text file into multiple ones, e.g.:<br>
+To split a single text file into multiple ones, with maximum of 500 lines each, e.g.:<br>
 > split -d -l 500 [filename] [optional_prefix_name]
 
 To sort TAB-delimited text file by first 3 columns:<br>
@@ -36,6 +36,12 @@ More at: http://www.tldp.org/LDP/abs/html/
 e.g. an example of back references:
 
 > echo "test testing" | sed -E 's/(t)(e)s\1/\2/g'
+
+e.g. executing multiple commands
+
+> echo "test testing" | sed -E -e 's/(t)(e)s\1/\2/g;s/i/I/g'
+
+> sed -E -i.bak -f myScript.sed inputFile.txt
 
 * Dynamic, use the following script:
 

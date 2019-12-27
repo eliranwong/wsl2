@@ -353,3 +353,7 @@ To backup, open Windows PowerShell and run, e.g.:
 To restore, e.g.
 
 > wsl --import WLinux C:\Users\Eliran\WLinux C:\Users\Eliran\WLinux.tar
+
+To unregister, e.g.
+
+> wsl --unregister WLinux

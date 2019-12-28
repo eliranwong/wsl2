@@ -73,24 +73,6 @@ To create link in startup, drag X410 from apps folder to startup folder
 > sudo apt update<br>
 > sudo apt dist-upgrade
 
-# Setup Common Tools
-
-> sudo apt install apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libasound2 libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils lsb-release binutils dbus-x11 youtube-dl ffmpeg gawk translate-shell opencc rar unrar
-
-# Examples on Command-line Tools
-
-* Download Youtube Video / Audio
-
-https://github.com/eliranwong/wsl2/blob/master/multimedia/youtube-dl.md
-
-* video conversion:
-
-https://github.com/eliranwong/wsl2/blob/master/multimedia/ffmpeg.md
-
-* others
-
-https://github.com/eliranwong/wsl2/blob/master/cli_tools/Readme.md
-
 # Edit 00-pengwin.sh
 
 > sudo nano /etc/profile.d/00-pengwin.sh
@@ -127,21 +109,7 @@ GUI > HIDPI [instead, use X410 > DPI Scaling > High Quality (Windowed Apps Only)
 
 EDITORS > CODE [read: https://github.com/eliranwong/wsl2/blob/master/README.md#setup-microsoft-visual-studio-code]
 
-# Setup Input Method
-
-"fcitx", bundled with pengwin, is not working in WSL2 at the time of writing.
-
-We recommend "ibus" instead.  For setup of ibus, read:
-
-https://github.com/eliranwong/wsl2/blob/master/input_method/ibus.md
-
-# Setup Terminal Apps
-
-For issues with official pengwin terminal window and alternatives, you may read:
-
-https://github.com/eliranwong/wsl2/blob/master/terminal/Readme.md
-
-# Tricks for Launching Linux GUI Apps
+# Settings for Launching Linux GUI Apps
 
 There were mutliple issues about running GUI apps with pengwin version earlier than 1.3.4 under WSL2.  Most know issues had been fixed with pengwin version 1.3.4.
 
@@ -157,21 +125,37 @@ Two suggestions here:
 > chmod 7700 /tmp/runtime-$USER<br>
 > export XDG_RUNTIME_DIR=/tmp/runtime-$USER
 
-# Fixing Windows Startmenu Shortcuts
+# Setup Common Tools
 
-For issues before pengwin version 1.3.4, you may read https://github.com/WhitewaterFoundry/Pengwin/issues/551.  Issues mentioned in the post had been fixed in pengwin version 1.3.4.
+> sudo apt install apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libasound2 libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils lsb-release binutils dbus-x11 youtube-dl ffmpeg gawk translate-shell opencc rar unrar
 
-After installing multiple gui apps, run:
+# Examples on Command-line Tools
 
-> pengwin-setup
+* Download Youtube Video / Audio
 
-select GUI > STARTMENU
+https://github.com/eliranwong/wsl2/blob/master/multimedia/youtube-dl.md
 
-The problem with creating shortcuts with pengwin-setup is that existing shortcuts are created again each time you run pengwin-setup > GUI > STARTMENU.  For examples, after installing 10 gui apps and run pengwin-setup > GUI > STARTMENU.  When you install one more gui app, running pengwin-setup > GUI > STARTMENU is ineffective because it creates shortcuts for all 11 gui apps.
+* video conversion:
 
-A workaround is to use /usr/local/pengwin-setup.d/generate-shortcut.sh directly.  For example: https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#create-a-windows-shortcut-recommended-for-pengwin-version-134
+https://github.com/eliranwong/wsl2/blob/master/multimedia/ffmpeg.md
 
-Alternatively, you can create a Windows shrotcut directly with Windows GUI.  For example: https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#create-a-windows-shortcut-directly-on-windows
+* others
+
+https://github.com/eliranwong/wsl2/blob/master/cli_tools/Readme.md
+
+# Setup Input Method
+
+"fcitx", bundled with pengwin, is not working in WSL2 at the time of writing.
+
+We recommend "ibus" instead.  For setup of ibus, read:
+
+https://github.com/eliranwong/wsl2/blob/master/input_method/ibus.md
+
+# Setup Terminal Apps
+
+For issues with official pengwin terminal window and alternatives, you may read:
+
+https://github.com/eliranwong/wsl2/blob/master/terminal/Readme.md
 
 # Open Windows Explorer via Linux Shell
 
@@ -314,6 +298,22 @@ To install additional fonts, e.g. ubuntu fonts:
 
 5) Build fonts information cache files:
 > fc-cache -f -v
+
+# Fixing Windows Startmenu Shortcuts
+
+For issues before pengwin version 1.3.4, you may read https://github.com/WhitewaterFoundry/Pengwin/issues/551.  Issues mentioned in the post had been fixed in pengwin version 1.3.4.
+
+After installing multiple gui apps, run:
+
+> pengwin-setup
+
+select GUI > STARTMENU
+
+The problem with creating shortcuts with pengwin-setup is that existing shortcuts are created again each time you run pengwin-setup > GUI > STARTMENU.  For examples, after installing 10 gui apps and run pengwin-setup > GUI > STARTMENU.  When you install one more gui app, running pengwin-setup > GUI > STARTMENU is ineffective because it creates shortcuts for all 11 gui apps.
+
+A workaround is to use /usr/local/pengwin-setup.d/generate-shortcut.sh directly.  For example: https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#create-a-windows-shortcut-recommended-for-pengwin-version-134
+
+Alternatively, you can create a Windows shrotcut directly with Windows GUI.  For example: https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#create-a-windows-shortcut-directly-on-windows
 
 # Setup mlocate
 

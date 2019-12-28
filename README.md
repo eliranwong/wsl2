@@ -211,6 +211,14 @@ or
 
 > code [filename]
 
+or
+
+> code .
+
+More at:<br>
+* https://code.visualstudio.com/docs/remote/wsl
+* https://code.visualstudio.com/remote-tutorials/wsl/run-in-wsl
+
 # Setup Bible Apps
 
 Command line version of UniqueBible.app:

@@ -18,6 +18,8 @@ gnome-terminal: https://github.com/eliranwong/wsl2/blob/master/terminal/gnome-te
 
 rxvt-unicode: https://github.com/eliranwong/wsl2/blob/master/terminal/urxvt.md
 
+Windows Terminal (Preview): https://github.com/eliranwong/wsl2/blob/master/terminal/windows_terminal.md
+
 # Comment:
 
 "gnome-terminal" is easier to be configured.  Copy & Paste in "gnome-terminal" can be done through right-click context menu or keyboard shortcuts.  We like "Tab" features of "gnome-terminal" too.

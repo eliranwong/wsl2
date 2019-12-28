@@ -7,16 +7,18 @@
 3) Enter the following settings:
 
 [Basic]<br>
-Name:<br>
+
+Name & Description:<br>
 > Open Windows Explorer Here<br>
-Description:<br>
-> Open Windows Explorer Here<br>
-<br>
+
+Command:<br>
 > explorer.exe $(echo %f | awk -F '/' '{print $NF}')<br>
-<br>
+
 [Appearance Conditions]<br>
+
 File Patther:<br>
 > *<br>
+
 Appears if selection contains:<br>
 > Directories<br>
 

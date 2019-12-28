@@ -14,6 +14,10 @@ Name & Description:<br>
 Command:<br>
 > explorer.exe $(echo %f | awk -F '/' '{print $NF}')<br>
 
+<img src="thunar_open_explorer_1.png" />
+
+<img src="thunar_open_explorer_2.png" />
+
 [Appearance Conditions]<br>
 
 File Patther:<br>

@@ -131,23 +131,11 @@ We recommend "ibus" instead.  For setup of ibus, read:
 
 https://github.com/eliranwong/wsl2/blob/master/input_method/ibus.md
 
-# Setup Linux Terminal Apps
+# Setup Terminal Apps
 
 For issues with official pengwin terminal window and alternatives, you may read:
 
 https://github.com/eliranwong/wsl2/blob/master/terminal/Readme.md
-
-# Setup Windows Terminal (Preview)
-
-Microsoft "Windows Terminal (Preview)" supports unicode characters.  It can be downloaded via "Microsoft Store" app or run in "Windows PowerShell (Admin)" if "Chocolately" is installed:
-
-> choco install microsoft-windows-terminal
-
-To set a WSL terminal as default:
-
-1) Open "Windows Terminal (Preview)"
-2) Select "Settings"
-3) Change the value of "defaultProfile"
 
 # Tricks for Launching Linux GUI Apps
 

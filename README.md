@@ -143,6 +143,25 @@ https://github.com/eliranwong/wsl2/blob/master/multimedia/ffmpeg.md
 
 https://github.com/eliranwong/wsl2/blob/master/cli_tools/Readme.md
 
+# Setup mlocate
+
+To install:<br>
+> sudo apt install mlocate
+
+To create database:<br>
+> sudo /etc/cron.daily/mlocate
+
+To manually update the database:<br>
+> sudo updatedb
+
+To run:
+
+> locate
+
+or
+
+> mlocate
+
 # Setup Input Method
 
 "fcitx", bundled with pengwin, is not working in WSL2 at the time of writing.
@@ -224,6 +243,26 @@ Chrome is available at: https://www.google.com/chrome/<br>
 Opera is available at: https://www.opera.com/<br>
 Chrome works the best with signin of mutliple gmail accounts.
 
+# GUI for pacakage management
+
+> sudo synaptic
+
+# Fixing Windows Startmenu Shortcuts
+
+For issues before pengwin version 1.3.4, you may read https://github.com/WhitewaterFoundry/Pengwin/issues/551.  Issues mentioned in the post had been fixed in pengwin version 1.3.4.
+
+After installing multiple gui apps, run:
+
+> pengwin-setup
+
+select GUI > STARTMENU
+
+The problem with creating shortcuts with pengwin-setup is that existing shortcuts are created again each time you run pengwin-setup > GUI > STARTMENU.  For examples, after installing 10 gui apps and run pengwin-setup > GUI > STARTMENU.  When you install one more gui app, running pengwin-setup > GUI > STARTMENU is ineffective because it creates shortcuts for all 11 gui apps.
+
+A workaround is to use /usr/local/pengwin-setup.d/generate-shortcut.sh directly.  For example: https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#create-a-windows-shortcut-recommended-for-pengwin-version-134
+
+Alternatively, you can create a Windows shrotcut directly with Windows GUI.  For example: https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#create-a-windows-shortcut-directly-on-windows
+
 # Use Windows Fonts
 
 We find that we don't have to to add any fonts on Linux side, as with pengwin, our tested GUI applications can use fonts installed on Windows side directly.
@@ -262,45 +301,6 @@ To install additional fonts, e.g. ubuntu fonts:
 
 5) Build fonts information cache files:
 > fc-cache -f -v
-
-# Fixing Windows Startmenu Shortcuts
-
-For issues before pengwin version 1.3.4, you may read https://github.com/WhitewaterFoundry/Pengwin/issues/551.  Issues mentioned in the post had been fixed in pengwin version 1.3.4.
-
-After installing multiple gui apps, run:
-
-> pengwin-setup
-
-select GUI > STARTMENU
-
-The problem with creating shortcuts with pengwin-setup is that existing shortcuts are created again each time you run pengwin-setup > GUI > STARTMENU.  For examples, after installing 10 gui apps and run pengwin-setup > GUI > STARTMENU.  When you install one more gui app, running pengwin-setup > GUI > STARTMENU is ineffective because it creates shortcuts for all 11 gui apps.
-
-A workaround is to use /usr/local/pengwin-setup.d/generate-shortcut.sh directly.  For example: https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#create-a-windows-shortcut-recommended-for-pengwin-version-134
-
-Alternatively, you can create a Windows shrotcut directly with Windows GUI.  For example: https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#create-a-windows-shortcut-directly-on-windows
-
-# Setup mlocate
-
-To install:<br>
-> sudo apt install mlocate
-
-To create database:<br>
-> sudo /etc/cron.daily/mlocate
-
-To manually update the database:<br>
-> sudo updatedb
-
-To run:
-
-> locate
-
-or
-
-> mlocate
-
-# GUI for pacakage management
-
-> sudo synaptic
 
 # Workaround to work with USB drive in WSL2
 

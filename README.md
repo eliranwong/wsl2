@@ -219,6 +219,16 @@ More at:<br>
 * https://code.visualstudio.com/docs/remote/wsl
 * https://code.visualstudio.com/remote-tutorials/wsl/run-in-wsl
 
+Optional Settings:
+
+Telemetry: Enable Telemetry > False
+
+Telemetry: Enable Crash Reporter > False
+
+Files: Eol > \n
+
+Terminal > External: Linux Exec > gnome-terminal
+
 # Setup Bible Apps
 
 Command line version of UniqueBible.app:

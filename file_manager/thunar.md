@@ -1,5 +1,11 @@
 # Thunar
 
+Thunar is a file manager for Linux and other Unix-like systems
+
+# Install
+
+> sudo apt install thunar thunar-archive-plugin thunar-media-tags-plugin
+
 # Open a Folder with "Windows Explorer"
 
 1) Go to "Edit > Configure custom actions..."
@@ -26,4 +32,6 @@ Appears if selection contains:<br>
 
 <img src="thunar_open_explorer_2.png" />
 
-# Other custom actions
+# Launch gnome-terminal via thunar
+
+https://github.com/eliranwong/wsl2/blob/master/terminal/gnome-terminal.md#to-work-with-thunars-custom-actions

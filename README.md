@@ -83,6 +83,10 @@ To create link in startup, drag X410 from apps folder to startup folder
 
 https://github.com/eliranwong/wsl2/blob/master/multimedia/youtube-dl.md
 
+* video conversion:
+
+https://github.com/eliranwong/wsl2/blob/master/multimedia/ffmpeg.md
+
 * others
 
 https://github.com/eliranwong/wsl2/blob/master/cli_tools/Readme.md

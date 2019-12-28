@@ -173,10 +173,20 @@ A workaround is to use /usr/local/pengwin-setup.d/generate-shortcut.sh directly.
 
 Alternatively, you can create a Windows shrotcut directly with Windows GUI.  For example: https://github.com/eliranwong/wsl2/blob/master/bible_apps/desktop.md#create-a-windows-shortcut-directly-on-windows
 
+# Open Windows Explorer via Linux Shell
+
+> explorer.exe .
+
+# Open Windows Explorer via Thunar File Manager
+
+https://github.com/eliranwong/wsl2/blob/master/file_manager/thunar.md#open-a-folder-with-windows-explorer
+
 # Open a Windows folder on Explorer with Linux Shell
 
 On Windows Explorer,
 
+Enter "wsl" on address bar
+<i>or</i><br>
 right-click and select "Open with Pengwin"<br>
 <i>or</i><br>
 shift & right-click and select "Open with Pengwin"<br>

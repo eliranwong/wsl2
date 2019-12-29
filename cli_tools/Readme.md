@@ -1,3 +1,22 @@
+# Setup mlocate
+
+To install:<br>
+> sudo apt install mlocate
+
+To create database:<br>
+> sudo /etc/cron.daily/mlocate
+
+To manually update the database:<br>
+> sudo updatedb
+
+To run:
+
+> locate
+
+or
+
+> mlocate
+
 # Common tasks of text processing
 
 To split a single text file into multiple ones, with maximum of 500 lines each, e.g.:<br>

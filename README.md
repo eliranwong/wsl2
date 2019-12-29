@@ -127,9 +127,13 @@ Two suggestions here:
 
 # Setup Common Tools
 
-> sudo apt install apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libasound2 libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils lsb-release binutils dbus-x11 youtube-dl ffmpeg gawk translate-shell opencc rar unrar
+> sudo apt install apt-utils build-essential cmake tree wget curl git zip unzip xz-utils nano lib32stdc++6 sqlite3 libsqlite3-dev libasound2 libnss3 libncurses5 libncurses5-dev libgl1-mesa-dev mesa-utils lsb-release binutils dbus-x11 youtube-dl ffmpeg gawk translate-shell opencc rar unrar mlocate
 
 # Examples on Command-line Tools
+
+* Useful tools
+
+https://github.com/eliranwong/wsl2/blob/master/cli_tools/Readme.md
 
 * Download Youtube Video / Audio
 
@@ -138,29 +142,6 @@ https://github.com/eliranwong/wsl2/blob/master/multimedia/youtube-dl.md
 * video conversion:
 
 https://github.com/eliranwong/wsl2/blob/master/multimedia/ffmpeg.md
-
-* others
-
-https://github.com/eliranwong/wsl2/blob/master/cli_tools/Readme.md
-
-# Setup mlocate
-
-To install:<br>
-> sudo apt install mlocate
-
-To create database:<br>
-> sudo /etc/cron.daily/mlocate
-
-To manually update the database:<br>
-> sudo updatedb
-
-To run:
-
-> locate
-
-or
-
-> mlocate
 
 # Setup Input Method
 

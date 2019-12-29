@@ -301,9 +301,13 @@ To terminate a distro, e.g.
 
 > wsl.exe -t Ubuntu
 
+Use $WSL_DISTRO_NAME:
+
+> wsl.exe -t $WSL_DISTRO_NAME
+
 To create an alias, e.g.
 
-> echo 'alias shutdown="wsl.exe -t WLinux"' >> ~/.bashrc
+> echo 'alias shutdown="wsl.exe -t $WSL_DISTRO_NAME"' >> ~/.bashrc
 
 # Shutdown Everything
 

@@ -165,7 +165,11 @@ https://github.com/eliranwong/wsl2/blob/master/terminal/Readme.md
 
 https://github.com/eliranwong/wsl2/blob/master/file_manager/thunar.md#open-a-folder-with-windows-explorer
 
-# Open a Windows folder on Explorer with Linux Shell
+# Launch Thunar File Manager from Windows Explorer
+
+https://github.com/eliranwong/wsl2/blob/master/file_manager/thunar.md#launch-thunar-from-windows-context-menu
+
+# Launch Linux Shell from Windows Explorer
 
 On Windows Explorer,
 

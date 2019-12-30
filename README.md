@@ -163,7 +163,7 @@ https://github.com/eliranwong/wsl2/blob/master/terminal/Readme.md
 
 # Open a File on WSL with Default Windows Application
 
-For example to open a file, say "my_word_document.docx", located on WSL:
+For example to open a file, say "my_word_document.docx", located on WSL, with Microsoft Word installed on Windows:
 
 > powershell.exe start "my_word_document.doc"
 
@@ -251,7 +251,7 @@ To install available packages:
 [Remarks: gnome-keyring & libsecret* are required for running mailspring.]
 
 * Office<br>
-wps office [https://www.wps.com/download] shows better compatibilities with ms files than libreoffice.
+wps office [https://www.wps.com/download] shows better compatibilities with ms files than libreoffice.  You can also open an office file located on WSL with Microsoft Office installed on Windows.  Read: https://github.com/eliranwong/wsl2#open-a-file-on-wsl-with-default-windows-application
 
 * mail client<br>
 mailspring is available for download at https://getmailspring.com/. Mailspring works with gmail signin whereas thunderbird doesn't.

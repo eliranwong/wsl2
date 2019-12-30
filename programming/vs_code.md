@@ -33,3 +33,16 @@ Telemetry: Enable Crash Reporter > False
 Files: Eol > \n
 
 Terminal > External: Linux Exec > gnome-terminal
+
+# Configure Custome Action in Thunar File Manager
+
+Name & Description:<br>
+> Open with Code
+
+Command:<br>
+> code %f
+
+Apperance Conditions:<br>
+> Directories, Text Files
+
+Read more about configuring Thunar at: https://github.com/eliranwong/wsl2/blob/master/file_manager/thunar.md

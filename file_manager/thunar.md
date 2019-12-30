@@ -76,6 +76,8 @@ https://github.com/eliranwong/wsl2/blob/master/terminal/gnome-terminal.md#to-wor
 * Set the value of "(Default)" as:<br>
 > C:\Windows\System32\wscript.exe C:\\Users\\elira\wslu\runHidden.vbs "C:\\Users\\elira\\AppData\\Local\\Microsoft\\WindowsApps\\WhitewaterFoundryLtd.Co.16571368D6CFF_kd1vv0z0vy70w\\pengwin.exe" run "cd $(echo '\"%V\"' | sed -E -e 's/([A-Z]):\\/mnt\/\L\1\//' -e 's/\\/\//g');  bash -l -c thunar"
 
+Remarks: Replace "elira" in the above command with your username.
+
 3) Go to "Computer\HKEY_CLASSES_ROOT\Directory\shell"
 
 * Right-click "shell" and select "New > Key"
@@ -87,6 +89,8 @@ https://github.com/eliranwong/wsl2/blob/master/terminal/gnome-terminal.md#to-wor
 * Name the newly created key as "command"
 * Set the value of "(Default)" as:<br>
 > C:\Windows\System32\wscript.exe C:\\Users\\elira\wslu\runHidden.vbs "C:\\Users\\elira\\AppData\\Local\\Microsoft\\WindowsApps\\WhitewaterFoundryLtd.Co.16571368D6CFF_kd1vv0z0vy70w\\pengwin.exe" run "cd $(echo '\"%V\"' | sed -E -e 's/([A-Z]):\\/mnt\/\L\1\//' -e 's/\\/\//g');  bash -l -c thunar"
+
+Remarks: Replace "elira" in the above command with your username.
 
 <img src="registry_editor_1.png" />
 

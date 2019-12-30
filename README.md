@@ -177,7 +177,7 @@ Name & Description:<br>
 > Open with Default Windows Application
 
 Command:<br>
-> powershell.exe start "%f"
+> powershell.exe start "%n"
 
 Appearance Conditions:<br>
 > Text Files, Audio Files, Video Files, Image Files, Other Files

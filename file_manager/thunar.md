@@ -8,6 +8,8 @@ Thunar is a file manager for Linux and other Unix-like systems
 
 # Open a Folder with "Windows Explorer"
 
+<img src="open_explorer_from_thunar.png" />
+
 # by Right-clicking a Folder
 
 1) Go to "Edit > Configure custom actions..."

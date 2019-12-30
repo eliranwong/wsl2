@@ -161,6 +161,29 @@ For issues with official pengwin terminal window and alternatives, you may read:
 
 https://github.com/eliranwong/wsl2/blob/master/terminal/Readme.md
 
+# Open a File on WSL with Default Windows Application
+
+For example to open a file, say "my_word_document.docx", located on WSL:
+
+> powershell.exe start "my_word_document.doc"
+
+* To create an alias:
+
+> echo "alias start='powershell.exe start'" >> ~/.bashrc
+
+* To create a custom action in Thunar:
+
+Name & Description:<br>
+> Open with Default Windows Application
+
+Command:<br>
+> powershell.exe start "%f"
+
+Appearance Conditions:<br>
+> Text Files, Audio Files, Video Files, Image Files, Other Files
+
+For more about Thunar: https://github.com/eliranwong/wsl2/blob/master/file_manager/thunar.md
+
 # Open Windows Explorer via Linux Shell
 
 > explorer.exe .

@@ -1,3 +1,11 @@
+# Examples of common commands
+
+# wget
+
+To download this repository
+
+wget https://github.com/eliranwong/wsl2/archive/master.zip
+
 # Setup mlocate
 
 To install:<br>
@@ -117,6 +125,9 @@ To export without header:<br>
 To export with header:<br>
 > sqlite3 -header -separator "[TAB HERE]" FILE.sqlite "select * from TABLE;" > output_filename.csv
 
+Remarks: To enter a TAB character on terminal:<br>
+Ctrl + v + TAB
+
 # Conversion between Traditional and Simplified Chinese
 
 Convert traditional Chinese to simplified Chinese:<br>
@@ -128,3 +139,116 @@ Convert simplified Chinese to traditional Chinese:<br>
 # Download Video / Audio from YouTube
 
 https://github.com/eliranwong/wsl2/blob/master/multimedia/youtube-dl.md
+
+# Examples of ffmpeg
+
+https://github.com/eliranwong/wsl2/blob/master/multimedia/ffmpeg.md
+
+# Working on Xresources
+
+To add / update configurations:<br>
+nano ~/.Xresources<br>
+[Edit ~/.Xresources]<br>
+xrdb -merge ~/.Xresources
+
+To replace / remove configurations:<br>
+xrdb -query -all > ~/.Xresources<br>
+[Edit ~/.Xresources]<br>
+xrdb ~/.Xresources
+
+# Information
+* check cpu
+
+lscpu
+
+* check storage
+
+df -h
+
+* check size of current directory
+
+du -sh
+
+* check memory
+
+free -h
+
+* Display File(s) in Tree
+
+For example:<br>
+tree -L 1 /
+
+# Force quit an app
+
+Make use of "aux ps" to locate a process and "kill" to quit.
+
+Alternatively, use "pkill"
+
+# Install & Uninstall .deb package
+
+To Install a downloaded .deb file:<br>
+sudo dpkg -i packagename.deb<br>
+OR<br>
+sudo apt install ./packagename.deb<br>
+OR<br>
+Use chrome os "Files" app, right-click a .deb file and select "Install with Linux"
+
+To Remove an installed package:<br>
+sudo dpkg -r packagename<br>
+
+Alternatively, open chrome os "Files" app (Alt+Shift+m), right click a *.deb file and select "Install with Linux"
+
+# Compile from source, an example:
+
+tar xvfz [package].tar.gz<br>
+cd [unpacked folder]<br>
+./configure<br>
+make<br>
+make install<br>
+
+# Trouble-shoot error on loading file(s):
+
+1. Use "<a href="https://github.com/eliranwong/Chrome-OS-Linux/blob/master/README.md#setup-mlocate">mlocate</a>" to find full path of the missing file:<br>
+mlocate [missing file]<br>
+
+2. Use "dpkg -S" to find the package(s) owning file(s):<br>
+dpkg -S [full file path]<br>
+
+3. re-install the package, indicated in step in the result of step (2)<br>
+
+For example, https://community.rstudio.com/t/installation-error-cannot-find-libsmime3-so/30646
+
+# Upgrade
+
+Use "sudo apt dist-upgrade" instead of "sudo apt upgrade"
+
+# Clean up storage
+
+sudo apt clean<br>
+sudo apt autoremove --purge<br>
+
+# Launch a GUI app through Terminal WITHOUT Blocking the Terminal
+
+e.g. To launch leafpad through terminal:
+
+geany &<br>
+[Closing the terminal closes leafpad too.]
+
+OR 
+
+geany & disown<br>
+[Leafpad keeps running even the terminal is closed.]
+
+# vi editor
+
+ZZ - Save and exit<br>
+:q! - discard all changes, since the last save, and exit<br>
+:w - save file but don't exit<br>
+:wq - again, save and exit<br>
+
+[<a href='https://github.com/eliranwong/Chrome-OS-Linux/blob/master/temp/ViCheatSheet.pdf'>ryanstutorials cheat sheet</a>]
+
+# Navigation with "man" or "less"
+SPACE = next page<br>
+b = previous page<br>
+q = quit

@@ -76,7 +76,10 @@ https://github.com/eliranwong/wsl2/blob/master/terminal/gnome-terminal.md#to-wor
 * Set the value of "(Default)" as:<br>
 > C:\\Windows\\System32\\wscript.exe C:\\\\Users\\\\elira\\wslu\\runHidden.vbs "C:\\\\Users\\\\elira\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\WhitewaterFoundryLtd.Co.16571368D6CFF_kd1vv0z0vy70w\\\\pengwin.exe" run "cd $(echo '\\"%V\\"' | sed -E -e 's/([A-Z]):\\\\/mnt\\/\\L\\1\\//' -e 's/\\\\/\\//g');  bash -l -c thunar"
 
-Remarks: Replace "elira" in the above command with your username.
+Remarks: 
+* The line above have been modified for rendering escape character \ on github page.  If you are reading this text in raw format, all double \ should be single when you enter the command in registry editor.
+* Replace "elira" in the above command with your username.
+* The most important part of the command is <b>run "cd $(echo '\\"%V\\"' | sed -E -e 's/([A-Z]):\\\\/mnt\\/\\L\\1\\//' -e 's/\\\\/\\//g');  bash -l -c thunar"</b>. You can copy the long string before the word "run" from a startmenu shortcut created by pengwin-setup. You can check the string by right-clicking a shortcut file and select "Properties".
 
 3) Go to "Computer\HKEY_CLASSES_ROOT\Directory\shell"
 
@@ -88,9 +91,12 @@ Remarks: Replace "elira" in the above command with your username.
 * Right-click "Thunar" and select "New > Key"
 * Name the newly created key as "command"
 * Set the value of "(Default)" as:<br>
-> C:\Windows\System32\wscript.exe C:\\Users\\elira\wslu\runHidden.vbs "C:\\Users\\elira\\AppData\\Local\\Microsoft\\WindowsApps\\WhitewaterFoundryLtd.Co.16571368D6CFF_kd1vv0z0vy70w\\pengwin.exe" run "cd $(echo '\"%V\"' | sed -E -e 's/([A-Z]):\\/mnt\/\L\1\//' -e 's/\\/\//g');  bash -l -c thunar"
+> C:\\Windows\\System32\\wscript.exe C:\\\\Users\\\\elira\\wslu\\runHidden.vbs "C:\\\\Users\\\\elira\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps\\\\WhitewaterFoundryLtd.Co.16571368D6CFF_kd1vv0z0vy70w\\\\pengwin.exe" run "cd $(echo '\\"%V\\"' | sed -E -e 's/([A-Z]):\\\\/mnt\\/\\L\\1\\//' -e 's/\\\\/\\//g');  bash -l -c thunar"
 
-Remarks: Replace "elira" in the above command with your username.
+Remarks: 
+* The line above have been modified for rendering escape character \ on github page.  If you are reading this text in raw format, all double \ should be single when you enter the command in registry editor.
+* Replace "elira" in the above command with your username.
+* The most important part of the command is <b>run "cd $(echo '\\"%V\\"' | sed -E -e 's/([A-Z]):\\\\/mnt\\/\\L\\1\\//' -e 's/\\\\/\\//g');  bash -l -c thunar"</b>. You can copy the long string before the word "run" from a startmenu shortcut created by pengwin-setup. You can check the string by right-clicking a shortcut file and select "Properties".
 
 <img src="registry_editor_1.png" />
 

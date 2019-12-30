@@ -161,6 +161,10 @@ For issues with official pengwin terminal window and alternatives, you may read:
 
 https://github.com/eliranwong/wsl2/blob/master/terminal/Readme.md
 
+# Setup Linux GUI File Manager
+
+https://github.com/eliranwong/wsl2/blob/master/file_manager/thunar.md
+
 # Open a File on WSL with Default Windows Application
 
 For example to open a file, say "my_word_document.docx", located on WSL, with Microsoft Word installed on Windows:

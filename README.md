@@ -3,6 +3,10 @@ Notes on setup of Windows Subsystem for Linux (version 2)
 
 Notes in this repository mainly describe the setup of pengwin version 1.3.4 in WSL2
 
+# Disclaimer
+
+We write these notes for personal use.  Please use at your own risk.
+
 # Use Latest Network Drivers
 
 In our testings, micrsoft "Windows Update" app does not detect newer version of wifi driver on one of our devices.  The old driver did cause an issue under WSL2 [e.g. <a href="https://github.com/microsoft/WSL/issues/4253">a link here</a>, <a href="https://github.com/WhitewaterFoundry/Pengwin/issues/561">another link here</a>].
@@ -169,7 +173,13 @@ https://github.com/eliranwong/wsl2/blob/master/file_manager/thunar.md#open-a-fol
 
 https://github.com/eliranwong/wsl2/blob/master/file_manager/thunar.md#launch-thunar-from-windows-context-menu
 
-# Launch Linux Shell from Windows Explorer
+# Lanuch Gnome Terminal from Windows Explorer
+
+https://github.com/eliranwong/wsl2/blob/master/terminal/gnome-terminal.md
+
+<img src="terminal/context_menu_open.png" />
+
+# Launch Windows Linux Shell from Windows Explorer
 
 On Windows Explorer,
 

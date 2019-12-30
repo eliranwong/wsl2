@@ -109,3 +109,7 @@ Remarks:
 # Custom Action - Open Directories & Text Files with VS Code
 
 https://github.com/eliranwong/wsl2/blob/master/programming/vs_code.md#configure-custome-action-in-thunar-file-manager
+
+# Custome Action - Open Any Files with Default Windows Applications
+
+https://github.com/eliranwong/wsl2#open-a-file-on-wsl-with-default-windows-application

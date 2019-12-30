@@ -169,6 +169,8 @@ https://github.com/eliranwong/wsl2/blob/master/terminal/Readme.md
 
 https://github.com/eliranwong/wsl2/blob/master/file_manager/thunar.md#open-a-folder-with-windows-explorer
 
+<img src="file_manager/open_explorer_from_thunar.png" />
+
 # Launch Thunar File Manager from Windows Explorer
 
 https://github.com/eliranwong/wsl2/blob/master/file_manager/thunar.md#launch-thunar-from-windows-context-menu

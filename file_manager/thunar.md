@@ -105,3 +105,7 @@ Remarks:
 <img src="registry_editor_2.png" />
 
 <img src="add_thunar_to_context_menu.png" />
+
+# Custom Action - Open Directories & Text Files with VS Code
+
+https://github.com/eliranwong/wsl2/blob/master/programming/vs_code.md#configure-custome-action-in-thunar-file-manager

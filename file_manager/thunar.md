@@ -63,12 +63,33 @@ https://github.com/eliranwong/wsl2/blob/master/terminal/gnome-terminal.md#to-wor
 # Launch Thunar from Windows Context Menu
 
 1) Press Windows key + R and run "regedit" to open Registry Editor.
+
 2) Go to "Computer\HKEY_CLASSES_ROOT\Directory\Background\shell\"
-3) Right-click "shell" and select "New > Key"
-4) Name the newly created key as "Thunar"
-5) Set the value of "(Default)" as "Open with Thunar"
-6) <b>INSIDE</b> Thunar, right-click and select "New > String Value"
-7) Name the newly created string as "Icon" and set the value as "C:\Users\elira\wslu\Thunar.ico"
-update...
+
+* Right-click "shell" and select "New > Key"
+* Name the newly created key as "Thunar"
+* Set the value of "(Default)" as "Open with Thunar"
+* <b>INSIDE</b> Thunar, right-click and select "New > String Value"
+* Name the newly created string as "Icon" and set the value as "C:\Users\elira\wslu\Thunar.ico"
+* Right-click "Thunar" and select "New > Key"
+* Name the newly created key as "command"
+* Set the value of "(Default)" as:<br>
+> C:\Windows\System32\wscript.exe C:\\Users\\elira\wslu\runHidden.vbs "C:\\Users\\elira\\AppData\\Local\\Microsoft\\WindowsApps\\WhitewaterFoundryLtd.Co.16571368D6CFF_kd1vv0z0vy70w\\pengwin.exe" run "cd $(echo '\"%V\"' | sed -E -e 's/([A-Z]):\\/mnt\/\L\1\//' -e 's/\\/\//g');  bash -l -c thunar"
+
+3) Go to "Computer\HKEY_CLASSES_ROOT\Directory\shell"
+
+* Right-click "shell" and select "New > Key"
+* Name the newly created key as "Thunar"
+* Set the value of "(Default)" as "Open with Thunar"
+* <b>INSIDE</b> Thunar, right-click and select "New > String Value"
+* Name the newly created string as "Icon" and set the value as "C:\Users\elira\wslu\Thunar.ico"
+* Right-click "Thunar" and select "New > Key"
+* Name the newly created key as "command"
+* Set the value of "(Default)" as:<br>
+> C:\Windows\System32\wscript.exe C:\\Users\\elira\wslu\runHidden.vbs "C:\\Users\\elira\\AppData\\Local\\Microsoft\\WindowsApps\\WhitewaterFoundryLtd.Co.16571368D6CFF_kd1vv0z0vy70w\\pengwin.exe" run "cd $(echo '\"%V\"' | sed -E -e 's/([A-Z]):\\/mnt\/\L\1\//' -e 's/\\/\//g');  bash -l -c thunar"
+
+<img src="registry_editor_1.png" />
+
+<img src="registry_editor_2.png" />
 
 <img src="add_thunar_to_context_menu.png" />

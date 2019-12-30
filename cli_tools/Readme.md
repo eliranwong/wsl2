@@ -70,11 +70,23 @@ e.g. executing multiple commands
 
 > sed -E -i.bak -f myScript.sed inputFile.txt
 
+e.g. remove file extension:
+
+> echo "test.txt.html" | sed s/\\.[^\\.]*$//
+
+e.g. open Thunar from Windows Explorer:
+
+https://github.com/eliranwong/wsl2/blob/master/file_manager/thunar.md#launch-thunar-from-windows-context-menu
+
 * Simple tasks with awk / gawk:
 
 > echo "My_name_is_Wong" | awk -F '_' '{surname=$4; $4="Eliran"; print $4 " " surname; print $0 " " surname}'
 
 > echo "My_name_is_Wong" | awk -F '_' '{gsub($4,"Eliran_Wong",$0); print$0}'
+
+e.g. open Windows Explorer from Thunar:
+
+https://github.com/eliranwong/wsl2/blob/master/file_manager/thunar.md#by-right-clicking-a-folder
 
 * A dynamic script written with python:
 

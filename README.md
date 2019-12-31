@@ -171,6 +171,8 @@ For example to open a file, say "my_word_document.docx", located on WSL, with Mi
 
 > powershell.exe start "my_word_document.doc"
 
+<b>Remarks: Use double quote "" for file names, which contain space characters.</b>
+
 * To create an alias:
 
 > echo "alias start='powershell.exe start'" >> ~/.bashrc

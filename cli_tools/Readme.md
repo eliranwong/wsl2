@@ -86,7 +86,7 @@ https://github.com/eliranwong/wsl2/blob/master/file_manager/thunar.md#launch-thu
 
 e.g. append text before file extension
 
-echo "test.text.txt.html" | awk -F '.' '{gsub($(NF-1), $(NF-1)"_new", $0); print$0}'
+> echo "test.text.txt.html" | awk -F '.' '{gsub($(NF-1), $(NF-1)"_new", $0); print$0}'
 
 e.g. open Windows Explorer from Thunar:
 

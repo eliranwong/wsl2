@@ -113,3 +113,7 @@ https://github.com/eliranwong/wsl2/blob/master/programming/vs_code.md#configure-
 # Custome Action - Open Any Files with Default Windows Applications
 
 https://github.com/eliranwong/wsl2#open-a-file-on-wsl-with-default-windows-application
+
+# Custom Action - Conversion between Traditional Chinese and Simplified Chinese
+
+https://github.com/eliranwong/wsl2/blob/master/cli_tools/chinese.md#conversion-between-traditional--simplified-chinese

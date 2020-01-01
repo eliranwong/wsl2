@@ -99,19 +99,23 @@ https://github.com/eliranwong/bible-verse-parser/blob/master/RegexSearch.py
 Usage:<br>
 RegexSearch.py [a nested tuple of search & replace items] [file1 / folder1] [file2 / folder2] [file3 / folder3] ...<br>
 Support multple files / folders, starting from the second parameter.<br>
+
 To make this script executable, run, e.g.:<br>
 > chmod +x RegexSearch.py<br>
+
 To provide a nested tuple / list of search & replace items on command line, e.g.:<br>
 > ./RegexSearch.py '(("test", "TEST"), ("[a-e]", r"x\\1x"))' test.txt test1.txt<br>
+
 To work with dynamic scripting, edit the content of function "processInputText" and run, e.g.:<br>
 > ./RegexSearch.py '()' test.txt test1.txt<br>
+
 The first parameter is optional to work on a single file or a single folder.  This assumes power users edit the content of function "processInputText" according to their own needs, e.g.:<br>
 > ./RegexSearch.py test.txt<br>
+
 To run with interactive mode, simple run:<br>
 > ./RegexSearch.py
 
-To use the script to build other script, for example:
-
+To use as an import, for example:<br>
 https://github.com/eliranwong/bible-verse-parser/blob/master/BibleVerseParser.py
 
 # rar & unrar

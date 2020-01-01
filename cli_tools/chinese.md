@@ -57,10 +57,10 @@ Traditional Chinese to Simplified Chinese<br>
 * Custom actions in Thunar File Manager
 
 Traditional Chinese to Simplified Chinese<br>
-> opencc -i %f -o %f_sc.txt -c t2s.json
+> opencc -i %f -o $(echo %f | awk -F '.' '{gsub($(NF-1), $(NF-1)"_sc", $0); print$0}') -c t2s.json
 
 Simplified Chinese to Traditional Chinese:<br>
-> opencc -i %f -o %f_tc.txt -c s2t.json
+> opencc -i %f -o $(echo %f | awk -F '.' '{gsub($(NF-1), $(NF-1)"_tc", $0); print$0}') -c s2t.json
 
 # Pinyin Package
 

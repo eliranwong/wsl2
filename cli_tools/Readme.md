@@ -84,6 +84,10 @@ https://github.com/eliranwong/wsl2/blob/master/file_manager/thunar.md#launch-thu
 
 > echo "My_name_is_Wong" | awk -F '_' '{gsub($4,"Eliran_Wong",$0); print$0}'
 
+e.g. append text before file extension
+
+echo "test.text.txt.html" | awk -F '.' '{gsub($(NF-1), $(NF-1)"_new", $0); print$0}'
+
 e.g. open Windows Explorer from Thunar:
 
 https://github.com/eliranwong/wsl2/blob/master/file_manager/thunar.md#by-right-clicking-a-folder

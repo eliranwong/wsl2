@@ -106,6 +106,9 @@ To make this script executable, run, e.g.:<br>
 To provide a nested tuple / list of search & replace items on command line, e.g.:<br>
 > ./RegexSearch.py '(("test", "TEST"), ("[a-e]", r"x\\1x"))' test.txt test1.txt<br>
 
+e.g. Convert two json files to a tab-separated text:<br>
+> RegexSearch.py '(("{\"bNo\": ([0-9]+?), \"cNo\": ([0-9]+?), \"vNo\": ([0-9]+?), \"vText\": \"(.*?)\"},", r"\1\t\2\t\3\t\4"),)' ULT.json UST.json
+
 To work with dynamic scripting, edit the content of function "processInputText" and run, e.g.:<br>
 > ./RegexSearch.py '()' test.txt test1.txt<br>
 

@@ -131,16 +131,28 @@ The first parameter is optional to work on a single file or a single folder.  Th
 To run with interactive mode, simple run:<br>
 > ./RegexSearch.py
 
-Below is an example of "interactive mode", using literal strings to search multiple lines and replace with back references:
+Below are some examples of "interactive mode":
 
-In the following example, we copy the scrip and put in folder "~/bin":
+In the following examples, we copy the scrip and put in folder "~/bin":
 
 > cp RegexSearch.py ~/bin/resr<br>
 > chmod +x ~/bin/resr
 
+* Simple search & replace:
+
+<img src="resr_example_2a.png">
+
+<img src="resr_example_2b.png">
+
+* Use literal strings to search multiple lines and replace with back references:
+
 <img src="resr_example_1.png">
 
-To use as an import, for example:<br>
+* Another example of using literal strings:
+
+<img src="resr_eg_literal_string.png">
+
+* To use as an import to build others, for example:<br>
 https://github.com/eliranwong/bible-verse-parser/blob/master/BibleVerseParser.py
 
 # rar & unrar

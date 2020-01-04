@@ -106,6 +106,7 @@ This script supports:<br>
 * perform multiple search and replace in one go
 * two modes of searching, simple & deep, for power users
 * power users can customise the script by editing function "processInputText"
+* can handle large-sized file(s)
 * etc.
 
 Usage:<br>
@@ -131,6 +132,11 @@ To run with interactive mode, simple run:<br>
 > ./RegexSearch.py
 
 Below is an example of "interactive mode", using literal strings to search multiple lines and replace with back references:
+
+In the following example, we copy the scrip and put in folder "~/bin":
+
+> cp RegexSearch.py ~/bin/resr<br>
+> chmod +x ~/bin/resr
 
 <img src="resr_example_1.png">
 

@@ -92,7 +92,7 @@ e.g. open Windows Explorer from Thunar:
 
 https://github.com/eliranwong/wsl2/blob/master/file_manager/thunar.md#by-right-clicking-a-folder
 
-* A dynamic script written with python:
+# A Search & Replace Utility, written with python:
 
 https://github.com/eliranwong/bible-verse-parser/blob/master/RegexSearch.py
 

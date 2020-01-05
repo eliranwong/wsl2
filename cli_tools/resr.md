@@ -1,4 +1,4 @@
-* A search and replace utility written with python:
+# A search and replace utility written with python:
 
 https://github.com/eliranwong/bible-verse-parser/blob/master/RegexSearch.py
 

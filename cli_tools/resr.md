@@ -71,5 +71,6 @@ In the following examples, we copy the scrip and put in folder "~/bin":
 
 <img src="resr_example_deep_mode.png" />
 
-* To use as an import to build others, for example:<br>
+# Example: To use as part of another program by import:
+
 https://github.com/eliranwong/bible-verse-parser/blob/master/BibleVerseParser.py

@@ -24,4 +24,4 @@ Windows Terminal (Preview): https://github.com/eliranwong/wsl2/blob/master/termi
 
 "gnome-terminal" is easier to be configured.  Copy & Paste in "gnome-terminal" can be done through right-click context menu or keyboard shortcuts.  We like "Tab" features of "gnome-terminal" too.
 
-Windows Terminal is a good alternative.  However, GUI apps launched with it do not work with ibus.
+It looks like Windows Terminal is a good alternative.

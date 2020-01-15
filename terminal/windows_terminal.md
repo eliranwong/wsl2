@@ -39,3 +39,14 @@ duplicate a tab: Ctrl+Shift+d
 copy: Ctrl+Shift+c
 
 paste: Ctrl+Shift+v
+
+# Launch Windows Terminal via a Linux app
+
+For example, launch from gnome-terminal:
+
+> powershell.exe wt.exe
+
+# Input method
+
+Windows Terminal works with Windows input method.
+

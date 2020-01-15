@@ -15,13 +15,13 @@ It can be downloaded via "Microsoft Store" app or run in "Windows PowerShell (Ad
 3) To change the value of "defaultProfile" to the guid of your WSL distro profile
 4) To change starting directory, e.g.
 
->    "defaultProfile": "{7f586916-8357-53d4-bb2b-ca96f639898a}",
+>    "defaultProfile": "{11111111-1111-1111-1111-111111111111}",
 
 >...
 >...
 
         {
-            "guid": "{7f586916-8357-53d4-bb2b-ca96f639898a}",
+            "guid": "{11111111-1111-1111-1111-111111111111}",
             "hidden": false,
             "name": "WLinux",
             "source": "Windows.Terminal.Wsl",

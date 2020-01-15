@@ -32,7 +32,7 @@ It can be downloaded via "Microsoft Store" app or run in "Windows PowerShell (Ad
 
 close a tab: Ctrl+Shift+w
 
-open a new tab: Ctrl+Shift+d
+open a new tab: Ctrl+Shift+t
 
 duplicate a tab: Ctrl+Shift+d
 

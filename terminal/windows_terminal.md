@@ -8,15 +8,31 @@ It can be downloaded via "Microsoft Store" app or run in "Windows PowerShell (Ad
 
 > choco install microsoft-windows-terminal
 
-# To set a WSL terminal as default:
+# To set a WSL terminal as default & change starting directory:
 
 1) Open "Windows Terminal (Preview)"
 2) Select "Settings"
-3) Change the value of "defaultProfile"
+3) To change the value of "defaultProfile" to the guid of your WSL distro profile
+4) To change starting directory, e.g.
+
+    "defaultProfile": "{7f586916-8357-53d4-bb2b-ca96f639898a}",
+
+...
+...
+
+        {
+            "guid": "{7f586916-8357-53d4-bb2b-ca96f639898a}",
+            "hidden": false,
+            "name": "WLinux",
+            "source": "Windows.Terminal.Wsl",
+            "startingDirectory": "\\\\\\\\wsl$\\\\WLinux\\\\home\\\\eliranwong\\\\"
+        },
 
 # Keyboard Shortcuts
 
 close a tab: Ctrl+Shift+w
+
+open a new tab: Ctrl+Shift+d
 
 duplicate a tab: Ctrl+Shift+d
 

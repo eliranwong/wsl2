@@ -34,7 +34,7 @@ Setup virtual environment & depedencies
 
 > python3 -m venv venv
 
-> pip3 install PySide2 PyPDF2 gdown python-docx
+> pip3 install PySide2 PyPDF2 gdown python-docx diff-match-patch googletrans
 
 # Create a Linux Alias
 

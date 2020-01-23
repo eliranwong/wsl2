@@ -129,6 +129,9 @@ To export without header:<br>
 To export with header:<br>
 > sqlite3 -header -separator "[TAB HERE]" FILE.sqlite "select * from TABLE;" > output_filename.csv
 
+To delete all records in a table:<br>
+> sqlite3 FILE.sqlite "DELETE FROM TABLE;"
+
 Remarks: To enter a TAB character on terminal:<br>
 Ctrl + v + TAB
 

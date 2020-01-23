@@ -119,18 +119,21 @@ To pack a folder, e.g. myFolder, into a rar file, e.g. file.rar:
 Import a TAB-delimited text file into a table:<br>
 sqlite3 FILE.sqlite<br>
 > .separator "\t"<br>
-> .import DATA.csv TABLE<br>
+> .import DATA.csv TABLENAME<br>
 > VACUUM;<br>
 > .quit<br>
 
 To export without header:<br>
-> sqlite3 -separator "[TAB HERE]" FILE.sqlite "select * from TABLE;" > output_filename.csv
+> sqlite3 -separator "[TAB HERE]" FILE.sqlite "SELECT FROM * from TABLENAME;" > output_filename.csv
 
 To export with header:<br>
-> sqlite3 -header -separator "[TAB HERE]" FILE.sqlite "select * from TABLE;" > output_filename.csv
+> sqlite3 -header -separator "[TAB HERE]" FILE.sqlite "SELECT FROM * from TABLENAME;" > output_filename.csv
 
 To delete all records in a table:<br>
-> sqlite3 FILE.sqlite "DELETE FROM TABLE;"
+> sqlite3 FILE.sqlite "DELETE FROM TABLENAME; VACUUM;"
+
+To delete a table:<br>
+> sqlite3 Bible_Promises.book "DROP TABLE TABLENAME;"
 
 Remarks: To enter a TAB character on terminal:<br>
 Ctrl + v + TAB

@@ -56,7 +56,11 @@ For example to dowload the last one with format of "mp4 640x360":
 
 > youtube-dl -f 18 https://www.youtube.com/watch?v=CDdvReNKKuk
 
-# Example, download a mp3 file directly from a video link
+# Example, download a mp4 video file from a YouTube link
+
+> youtube-dl -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4 https://www.youtube.com/watch?v=CDdvReNKKuk
+
+# Example, download a mp3 file from a YouTube link
 
 > youtube-dl -x --audio-format mp3 https://www.youtube.com/watch?v=CDdvReNKKuk
 

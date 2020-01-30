@@ -222,6 +222,12 @@ shift & right-click and select "Open with Pengwin"<br>
 <i>or</i><br>
 shift & right-click and select "Open Linux shell here"
 
+# Launch Linux GUI app from Windows PowerShell
+
+e.g.
+
+> pengwin.exe run "bash -l -c google-chrome"
+
 # WSL Utilities 
 
 <a href='https://github.com/wslutilities/wslu'>WSL Utilities</a> are bundled with pengwin.  Read more about these utilities at https://github.com/wslutilities/wslu.

@@ -94,7 +94,7 @@ https://github.com/eliranwong/wsl2/blob/master/file_manager/thunar.md#by-right-c
 
 # Convert an image file to html
 
-> echo '<img src="data:image/png;base64,'$(base64 test.png)'">' > test.html
+> echo '\<img src="data:image/png;base64,'$(base64 test.png)'"\>' > test.html
 
 # A Search & Replace Utility, written with python:
 

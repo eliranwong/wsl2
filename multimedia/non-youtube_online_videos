@@ -1,0 +1,13 @@
+# Download non-youtube online videos
+
+You can use youtube-dl to download non-youtube online videos.  Use youtube-dl the same way as you use it to download a youtube video.
+
+Brief instructions to use youtube-dl is available at:
+
+https://github.com/eliranwong/wsl2/blob/master/multimedia/youtube-dl.md
+
+# Tested websites:
+
+https://www.bilibili.com/
+
+https://youku.com/

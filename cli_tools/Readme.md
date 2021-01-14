@@ -128,10 +128,10 @@ sqlite3 FILE.sqlite<br>
 > .quit<br>
 
 To export without header:<br>
-> sqlite3 -separator "[TAB HERE]" FILE.sqlite "SELECT FROM * from TABLENAME;" > output_filename.csv
+> sqlite3 -separator "[TAB HERE]" FILE.sqlite "SELECT * FROM TABLENAME;" > output_filename.csv
 
 To export with header:<br>
-> sqlite3 -header -separator "[TAB HERE]" FILE.sqlite "SELECT FROM * from TABLENAME;" > output_filename.csv
+> sqlite3 -header -separator "[TAB HERE]" FILE.sqlite "SELECT * FROM TABLENAME;" > output_filename.csv
 
 To delete all records in a table:<br>
 > sqlite3 FILE.sqlite "DELETE FROM TABLENAME; VACUUM;"

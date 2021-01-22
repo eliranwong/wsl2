@@ -1,3 +1,9 @@
+# Backup: Notes for setting up fcitx on ChromeOS Crostini
+
+ibus works better than fcitx on WSL2, please read the following article on setting up ibus for WSL2:
+
+https://github.com/eliranwong/wsl2/blob/master/input_method/ibus.md
+
 # Locale [optional / essential]
 
 It is optional, becuase users don't need Chinese locale pack(s) for display of Chinese characters.<br>

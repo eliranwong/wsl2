@@ -120,6 +120,8 @@ export XIM_PROGRAM="/usr/bin/fcitx"<br>
 export GTK_IM_MODULE="fcitx"<br>
 export QT_IM_MODULE="fcitx"<br>
 export XMODIFIERS="@im=fcitx"<br>
+export QT_QPA_PLATFORM=wayland<br>
+export GDK_BACKEND=x11
 
 In nano, Ctrl+O to save, Ctrl+X to exit.
 
@@ -139,6 +141,8 @@ Environment="XIM_PROGRAM=/usr/bin/fcitx"<br>
 Environment="GTK_IM_MODULE=fcitx"<br>
 Environment="QT_IM_MODULE=fcitx"<br>
 Environment="XMODIFIERS=@im=fcitx"<br>
+Environment="QT_QPA_PLATFORM=wayland"<br>
+Environment="GDK_BACKEND=x11"
 
 In nano, Ctrl+O to save, Ctrl+X to exit.
 

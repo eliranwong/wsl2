@@ -11,9 +11,15 @@ HOWEVER, it is essential if you want to type Chinese on a Linux terminal, which 
 
 An example:
 
-* run in terminal: sudo nano /etc/locale.gen
-* remove the comment sign before "zh_CN.UTF8 UTF8"
-* to download language package(s), run in terminal: sudo locale-gen
+* To edit /etc/locale.gen, run:
+
+> sudo nano /etc/locale.gen
+
+* Use ctrl + w key combination to locate "zh_CN.UTF8 UTF8" and uncomment it, by removing the # sign at the beginning of the line.
+
+* To download language package(s), run:
+
+> sudo locale-gen
 
 # Set Default Locale [optional]
 
@@ -80,15 +86,17 @@ The following example uses "fcitx".<br>
 [To use "ibus" instead of "fcitx", read https://wiki.archlinux.org/index.php/IBus ]
 
 1. Install fcitx:<br>
-sudo apt install fcitx fcitx-frontend* fcitx-lib* libfcitx* fcitx-googlepinyin fcitx-table-cangjie5 opencc<br>
-[optional: sudo apt install fcitx5*]
+> sudo apt install fcitx fcitx-frontend* fcitx-lib* libfcitx* fcitx-googlepinyin fcitx-table-cangjie5 opencc fcitx5* -y<br>
 
-[Optional: To avoid potential conficts or free around 80MB of storage, enter in terminal:<br>
-sudo apt remove fcitx-module-kimpanel]
+To avoid potential conficts or free around 80MB of storage, run in terminal:
+
+> sudo apt -y remove fcitx-module-kimpanel
 
 2. Config fcitx as default input:<br>
-sudo apt install im-config<br>
-im-config<br>
+
+> sudo apt install im-config
+
+> im-config<br>
 
 * select "OK"
 * select "Yes" to question "Do you explicitly select the user configuration?"
@@ -96,15 +104,13 @@ im-config<br>
 * select "OK"
 * select "OK"
 
-<img src="fcitx.png"><br>
-
 3. Add Variables
 
 * For running applications launched through entering cmmands in terminal:
 
 Use text editor to edit file ~/.bashrc, for example:
 
-nano ~/.bashrc
+> nano ~/.bashrc
 
 Add the following lines at the end of the file:
 
@@ -123,7 +129,7 @@ Close and re-open terminal to make changes effective.
 
 Use text editor to edit file /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf, for example:
 
-sudo nano /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf
+> sudo nano /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf
 
 Add the following lines at the end of the file:
 
@@ -142,7 +148,7 @@ Close and re-open terminal to make changes effective.
 
 4. Setup autostart of "fcitx" service
 
-echo "/usr/bin/fcitx-autostart > /dev/null 2>&1" >> ~/.sommelierrc
+> echo "/usr/bin/fcitx-autostart > /dev/null 2>&1" >> ~/.sommelierrc
 
 Restart Linux to make changes effective.<br>
 
@@ -151,9 +157,11 @@ Restart Linux to make changes effective.<br>
 
 5. Setup keyboards
 
-Enter in terminal:
+IMPORTANT: Make sure fcitx service is running first:
 
-fcitx-config-gtk3
+Run terminal:
+
+> fcitx-config-gtk3
 
 * add "Google Pinyin" for typing simplified Chinese directly
 * add "Cangjie5" for typing traditional Chinese directly

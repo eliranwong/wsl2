@@ -150,7 +150,7 @@ Close and re-open terminal to make changes effective.
 
 > echo "/usr/bin/fcitx-autostart > /dev/null 2>&1" >> ~/.sommelierrc
 
-Restart Linux to make changes effective.<br>
+<b>Restart Linux to make changes effective.</b><br>
 
 [Description on /dev/null: https://medium.com/@codenameyau/step-by-step-breakdown-of-dev-null-a0f516f53158]<br>
 [Description on 2>&1: https://www.brianstorti.com/understanding-shell-script-idiom-redirect/]<br>
@@ -163,6 +163,7 @@ Run terminal:
 
 > fcitx-config-gtk3
 
+* Uncheck "Only Show Current Language"
 * add "Google Pinyin" for typing simplified Chinese directly
 * add "Cangjie5" for typing traditional Chinese directly
 * to install only one Chinese keyboard for typing both traditional & simplified Chinese, you may consider conversion features which we will describe in the following sections.

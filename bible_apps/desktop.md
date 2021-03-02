@@ -32,26 +32,27 @@ Alternatively, run in terminal
 
 UBA offers automatic setup on first run.
 
-# Create a Linux Alias
+# Create a command alias [optional]:
 
-For example:
+You can run UBA with terminal without typing a fullpath, by creating an alias.
 
-Download the following file and save to your home directory:
+Below is an example:
 
-https://github.com/eliranwong/UniqueBible/blob/master/shortcut_uba_Windows_wsl2.sh
-[Remarks: Edit ubaFolder="$HOME/UniqueBible/" on line 3 if you do not place UniqueBible folder in home directory.]
+This example only works if:
 
-Add permission:
+1) You use bash
 
-> chmod +x ~/shortcut_uba_Windows_wsl2.sh
+2) The following example assumes that you install UBA in your home directory.  You need to change the path if you install at a different location.
 
-Add alias:
+> echo "alias uba='$HOME/UniqueBible/uba.py'" >> ~/.bashrc
 
-> echo "alias uniquebible=~/shortcut_uba_Windows_wsl2.sh" >> ~/.bashrc
+Close and reopen your terminal app, you should then be able to run UBA with this simple command:
 
-To run:
+> uba
 
-> uniquebible
+Our setup script automatically makes file "uba.py" executable, but in case it is not running, you may need to set permission on it manually:
+
+> chmod u+x $HOME/UniqueBible/uba.py
 
 # Create a Windows shortcut [recommended for pengwin version 1.3.4+]
 

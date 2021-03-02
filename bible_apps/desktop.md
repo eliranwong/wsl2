@@ -22,19 +22,15 @@ Alternatively, run in terminal
 
 > sudo apt install python3 python3-setuptools python3-pip python3-venv diff_match_patch
 
-Download UniqueBible
-
-> cd ~
+# Download UBA
 
 > git clone https://github.com/eliranwong/UniqueBible
 
-Setup virtual environment & depedencies
+# Run UBA
 
-> cd ~/UniqueBible
+> python3 UniqueBible/uba.py
 
-> python3 -m venv venv
-
-> pip3 install PySide2 PyPDF2 gdown python-docx diff-match-patch googletrans
+UBA offers automatic setup on first run.
 
 # Create a Linux Alias
 

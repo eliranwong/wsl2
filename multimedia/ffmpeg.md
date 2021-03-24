@@ -21,3 +21,7 @@ MP4 TO OGV (HIGH)
 MP4 TO OGV (MEDIUM)
 
 > ffmpeg -i input.mp4 -vcodec libtheora -acodec libvorbis -q:v 2 -q:a 4 output.ogv
+
+WEBM TO MP4 (https://blog.addpipe.com/converting-webm-to-mp4-with-ffmpeg/)
+
+> ffmpeg -i input.webm output.mp4

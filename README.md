@@ -389,3 +389,7 @@ To restore, e.g.
 To unregister, e.g.
 
 > wsl --unregister WLinux
+
+# Other References
+
+https://docs.microsoft.com/en-us/windows/wsl/tutorials/gui-apps

@@ -23,7 +23,7 @@ https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
 # Notes on conversion between WSL1 & WSL2
 
-https://www.pengwin.dev/blog/2019/6/12/enable-wsl2-and-convert-existing-pengwin-installations
+https://learn.microsoft.com/en-us/windows/wsl/install-manual
 
 # Setup X410 (PAID)
 

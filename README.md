@@ -25,6 +25,10 @@ https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
 https://learn.microsoft.com/en-us/windows/wsl/install-manual
 
+# Connect USB Drive
+
+https://learn.microsoft.com/en-us/windows/wsl/connect-usb
+
 # Setup X410 (PAID)
 
 DPI Scaling > High Quality (Windowed Apps Only)

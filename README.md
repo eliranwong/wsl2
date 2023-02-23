@@ -1,3 +1,9 @@
+# Latest
+
+For setup of WSL2 Ubuntu version and running a Qt for Python application, read:
+
+https://github.com/eliranwong/UniqueBible/wiki/Install-UBA-on-Windows-via-WSL2-Ubuntu
+
 # wsl2
 Notes on setup of Windows Subsystem for Linux (version 2)
 

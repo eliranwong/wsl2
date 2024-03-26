@@ -370,6 +370,12 @@ To create an alias, e.g.
 
 > echo 'alias shutdown="wsl.exe -t $WSL_DISTRO_NAME"' >> ~/.bashrc
 
+# Fix Slow Download Speed on Windows 10
+
+Open Control Panel > Networking and Internet > View network status and tasks and click on Change adapter settings on the left panel. Find the vEthernel (WSL) adapter, right click and select Properties. Click on Configure and open the Advanced tab. Search through each of the properties until you find Large Send Offload Version 2 (IPv4) and Large Send Offload Version 2 (IPv6). Disable both of these properties.
+
+Read https://townsyio.medium.com/wsl2-how-to-fix-download-speed-3edb0c348e29
+
 # Shutdown Everything
 
 Immediately terminates all running distributions and the WSL 2 lightweight utility virtual machine.
